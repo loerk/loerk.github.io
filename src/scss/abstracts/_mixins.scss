@@ -1,0 +1,9 @@
+@mixin round {
+    border-radius:50%;
+}
+
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
