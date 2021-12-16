@@ -1,5 +1,5 @@
 {
-  "name": "franziskaseitz.github.io",
+  "name": "loerk.github.io",
   "version": "1.0.0",
   "description": "This is the final Project of the User Interface Basics Course. You are about to look at the result of 3 months of HTML5, CSS3 and SCSS!",
   "main": "index.js",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loerk/franziskaseitz.github.io.git"
+    "url": "git+https://github.com/loerk/loerk.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/loerk/franziskaseitz.github.io/issues"
+    "url": "https://github.com/loerk/loerk.github.io/issues"
   },
-  "homepage": "https://github.com/loerk/franziskaseitz.github.io#readme",
+  "homepage": "https://github.com/loerk/loerk.github.io#readme",
   "dependencies": {
-    "scss": "^0.2.4"
+    "sass": "^1.45.0"
   }
 }
