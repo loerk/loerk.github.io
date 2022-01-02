@@ -43,9 +43,8 @@
 }
 
 .primary-navigation {
-  background-color: black;
-  // backdrop-filter: blur(1rem);
-  // background: hsl(0 0% 100% /0.1);
+  backdrop-filter: blur(1rem);
+  background: hsl(0 0% 100% /0.1);
   li {
     font-size: 1em;
     text-transform: uppercase;

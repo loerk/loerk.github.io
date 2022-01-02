@@ -196,7 +196,8 @@ header:hover .h1-container > .h1-horizontal > div > span {
 }
 
 .primary-navigation {
-  background-color: black;
+  backdrop-filter: blur(1rem);
+  background: rgba(255, 255, 255, 0.1);
 }
 .primary-navigation li {
   font-size: 1em;
@@ -268,11 +269,13 @@ section .section-header {
   justify-content: center;
   padding: 4rem;
   width: 100%;
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: lighter;
+  letter-spacing: 0.2em;
 }
 section .flex-container {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1500px;
 }
 @media (min-width: 35em) {
   section .flex-container {

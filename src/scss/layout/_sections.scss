@@ -16,12 +16,14 @@ section{
         @include a.center-content;
         padding:4rem;
         width:100%;
-        font-size: 4em;
+        font-size: 3em;
+        font-weight:lighter;
+        letter-spacing: .2em;
         
     }
     .flex-container{
         margin:0 auto;
-         max-width:1300px;
+         max-width:1500px;
          @include a.min-sm {
              display:flex;
              flex-flow:row wrap;
