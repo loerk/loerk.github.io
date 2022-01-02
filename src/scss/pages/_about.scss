@@ -6,6 +6,7 @@
     aspect-ratio: 1;
     filter: grayscale(100%);
 
+
     &:hover{
         filter:grayscale(0);
         transition:1s;
@@ -14,11 +15,14 @@
         width:400px;
     }
     img{
+        display:block;
         margin-top:2rem;
         width:100%;
         aspect-ratio: 1;
         border:5px solid black;
         object-fit: cover;
+        transition:.3s;
+
     }
     p{
         text-align:center;

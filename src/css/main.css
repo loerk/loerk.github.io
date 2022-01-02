@@ -197,7 +197,7 @@ header:hover .h1-container > .h1-horizontal > div > span {
 
 .primary-navigation {
   backdrop-filter: blur(1rem);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.8);
 }
 .primary-navigation li {
   font-size: 1em;
@@ -220,8 +220,6 @@ header:hover .h1-container > .h1-horizontal > div > span {
 }
 @media (max-width: 35em) {
   .primary-navigation {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(1rem);
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 10%;
@@ -300,11 +298,13 @@ section .flex-container {
   }
 }
 .img-container img {
+  display: block;
   margin-top: 2rem;
   width: 100%;
   aspect-ratio: 1;
   border: 5px solid black;
   object-fit: cover;
+  transition: 0.3s;
 }
 .img-container p {
   text-align: center;
