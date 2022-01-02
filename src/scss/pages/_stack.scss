@@ -1,0 +1,32 @@
+@use "../abstracts/" as a;
+
+.stack {
+.section-header{
+    font-size:4rem;
+
+}
+
+  .img-container {
+      width:200px;
+    border: 5px solid white;
+    @include a.center-content;
+    margin-block: 1rem;
+    overflow:hidden;
+    transform: rotateY(180deg);
+   
+    &:hover {
+        transform: rotateY(0);
+        background-color: white;
+    }
+    &:hover p{
+        transform:scale(1.6);
+        transition:1s ease;
+        color:black;
+        
+    }
+  
+  }
+
+  
+}
+

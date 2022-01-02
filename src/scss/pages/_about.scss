@@ -1,0 +1,27 @@
+@use "../abstracts/" as a;
+
+.img-container{
+    margin:0 auto;
+    width:200px;
+    aspect-ratio: 1;
+    filter: grayscale(100%);
+
+    &:hover{
+        filter:grayscale(0);
+        transition:1s;
+    }
+    @include a.min-sm {
+        width:400px;
+    }
+    img{
+        margin-top:2rem;
+        width:100%;
+        aspect-ratio: 1;
+        border:5px solid black;
+        object-fit: cover;
+    }
+    p{
+        text-align:center;
+    }
+
+}

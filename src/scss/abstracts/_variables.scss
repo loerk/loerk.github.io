@@ -1,36 +1,13 @@
-
-$clr-primary: #00296b;
-$clr-primary-light:#003f88;
-$clr-primary-lighter:#00509d;
-$clr-secondary:#EBAC1A;
-$clr-secondary-light:#ffd500;
+@forward '../base/typography';
 
 $clr-light: white;
-$clr-dark:black
+$clr-dark:black;
+
+$ff-head: 'NeutralFace', sans-serif;
 
 
 
-
-// Ship Cove
-// #6485B2
-
-// Cameo
-// #E0C2AD
-
-// Fuel 
-// #EBAC1A
 
 // Neptune
 // #74ACB8
-
-
-// #00296b
-
-// #003f88
-
-// #00509d
-
-// #fdc500
-
-// #ffd500
 

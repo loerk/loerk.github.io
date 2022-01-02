@@ -1,0 +1,98 @@
+@use "../abstracts/" as a;
+
+.nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    width: 5rem;
+    aspect-ratio: 1;
+    margin: 1rem;
+    background-color: white;
+    color: black;
+    @include a.center-content;
+    p{
+      font-family: a.$ff-head;
+      padding:1rem;
+      border:2px solid black;
+    }
+  }
+
+  .mobile-nav-toggle {
+    display: none;
+    span {
+      visibility: hidden;
+    }
+    @include a.max-sm {
+      display: block;
+      position: absolute;
+      z-index: 9999;
+      background: no-repeat url("../images/icon-hamburger.svg");
+      width: 2rem;
+      aspect-ratio: 1;
+      border: 0;
+      top: 2rem;
+      right: 2rem;
+    }
+  }
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background: no-repeat url("../images/icon-close.svg");
+  }
+}
+
+.primary-navigation {
+  background-color: black;
+  // backdrop-filter: blur(1rem);
+  // background: hsl(0 0% 100% /0.1);
+  li {
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  a {
+    color: a.$clr-light;
+    font-family: a.$ff-head;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+  }
+  a > [aria-hidden="true"] {
+    font-family: "NeutralFaceBold", sans-serif;
+    margin-inline-end: 0.75em;
+
+    @media (min-width: 35em) and (max-width: 55em) {
+      display: none;
+    }
+  }
+  @include a.max-sm {
+    background: hsl(0 0% 100% /0.2);
+    backdrop-filter: blur(1rem);
+
+    position: fixed;
+    z-index: 1000;
+    //top-bottom-left-right.shorthand
+    inset: 0 0 0 10%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+    gap: 2em;
+    transition: transform 350ms ease-out;
+    transform: translateX(100%);
+  }
+  @include a.min-sm {
+    //only top and bottom
+    padding-block: 2rem;
+    //smallest 3rem middle growth factor and last max padding
+    padding-inline: clamp(3rem, 10vw, 10rem);
+    gap: clamp(1.5rem, 5vw, 3rem);
+  }
+}
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0%);
+}
+//if a browser supports this property execute that code, if not, take default
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+    backdrop-filter: blur(1rem);
+    background: hsl(0 0% 100% /0.1);
+  }
+}

@@ -1,0 +1,31 @@
+@use "../abstracts/" as a;
+
+body{
+    overflow-x: hidden;
+
+}
+section{
+    background-color: black;
+    color:white;
+    width:100%;
+    min-height:100vh;
+    padding-bottom:5rem;
+    .section-header{
+        font-family: a.$ff-head;
+        text-align:center;
+        @include a.center-content;
+        padding:4rem;
+        width:100%;
+        font-size: 4em;
+        
+    }
+    .flex-container{
+        margin:0 auto;
+         max-width:1300px;
+         @include a.min-sm {
+             display:flex;
+             flex-flow:row wrap;
+         }
+     }
+}
+

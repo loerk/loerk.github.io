@@ -8,31 +8,104 @@
 you are awesome!
 -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/main.css">
-    <title>HealthyCode</title>
-</head>
-<body>
-    <header>
-        <div class="nav-container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <script src="nav.js" defer></script>
+    <title>FS</title>
+  </head>
+  <body>
+    <header id="#home">
+      <div class="nav-container flex">
+        <div class="logo">
+          <p>FS</p>
+        </div>
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span>Menu</span>
+        </button>
         <nav>
-            <ul>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li>
+              <a href="#home"> <span aria-hidden="true">//</span>home</a>
+            </li>
+            <li>
+              <a href="#about"><span aria-hidden="true">//</span>about</a>
+            </li>
+            <li>
+              <a href="#portfolio"
+                ><span aria-hidden="true">//</span>portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact"><span aria-hidden="true">//</span>contact</a>
+            </li>
+          </ul>
         </nav>
-    </div>
+      </div>
+      <div class="h1-container">
+        <div class="h1-horizontal">
+          <div>f<span>ranziska</span></div>
+          <div>s<span>eitz</span></div>
+        </div>
+        <!-- <div class="h1-vertical" ><span class="vertical1">ull</span><span class="vertical2">ack</span></div> -->
+      </div>
     </header>
     <main>
-        <section id="home" class=""></section>
-        <section id="about" class=""></section>
-        <section id="portfolio" class=""></section>
-        <section id="contact" class=""></section>
+      <section id="about" class="about">
+        <h2 class="section-header">WHOAMI</h2>
+        <div class="flex-container">
+          <div class="img-container">
+            <img src="src/images/mountains.jpg" alt="" />
+            <p>what i like</p>
+          </div>
+          <div class="img-container">
+            <img src="src/images/avatar.png" alt="" />
+            <p>how i look</p>
+          </div>
+          <div class="img-container">
+            <img src="src/images/code.jpg" alt="" />
+            <p>what i do</p>
+          </div>
+        </div>
+        <div class="stack">
+          <p class="section-header"></p>
+          <div class="flex-container">
+            <div class="img-container">
+              <p>html5</p>
+            </div>
+            <div class="img-container">
+              <p>CSS3</p>
+            </div>
+            <div class="img-container">
+              <p>SCSS</p>
+            </div>
+            <div class="img-container">
+              <p>bootstrap</p>
+            </div>
+            <div class="img-container">
+              <p>JavaScript</p>
+            </div>
+            <div class="img-container">
+              <p>React</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <h2 class="section-header">My work</h2>
+      </section>
+      <section id="contact" class=""></section>
     </main>
-</body>
+    <footer></footer>
+  </body>
 </html>
