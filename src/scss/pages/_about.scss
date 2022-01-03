@@ -29,3 +29,14 @@
     }
 
 }
+
+.text-container{
+  width:60%;
+  margin:0 auto;
+  text-align: justify;
+  line-height:2.5;
+  p{
+  font-size:1.2rem;
+  font-family: a.$ff-head;
+}
+}

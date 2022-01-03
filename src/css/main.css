@@ -151,7 +151,8 @@ header:hover .h1-container > .h1-horizontal > div > span {
 }
 
 .nav-container {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 9999;
   align-items: center;
@@ -310,12 +311,25 @@ section .flex-container {
   text-align: center;
 }
 
-.stack .section-header {
-  font-size: 4rem;
+.text-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 2.5;
+}
+.text-container p {
+  font-size: 1.2rem;
+  font-family: "NeutralFace", sans-serif;
+}
+
+.stack .sub-header {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: lighter;
 }
 .stack .img-container {
   width: 200px;
-  border: 5px solid white;
+  border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: center;

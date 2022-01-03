@@ -1,14 +1,16 @@
 @use "../abstracts/" as a;
 
 .stack {
-.section-header{
-    font-size:4rem;
+.sub-header{
+  margin-top:2rem;
+    font-size:2rem;
+    font-weight:lighter;
 
 }
 
   .img-container {
-      width:200px;
-    border: 5px solid white;
+    width:200px;
+    border: 2px solid white;
     @include a.center-content;
     margin-block: 1rem;
     overflow:hidden;
