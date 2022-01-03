@@ -146,8 +146,13 @@ header:hover .h1-container > .h1-horizontal > div > span {
   font-size: 3em;
 }
 .h1-container .h1-horizontal span {
-  color: transparent;
   font-size: 0.5em;
+  color: transparent;
+}
+@media (max-width: 35em) {
+  .h1-container .h1-horizontal span {
+    color: white;
+  }
 }
 
 .nav-container {
@@ -261,13 +266,16 @@ section {
   padding-bottom: 5rem;
 }
 section .section-header {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   font-family: "NeutralFace", sans-serif;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4rem;
-  width: 100%;
   font-size: 3em;
   font-weight: lighter;
   letter-spacing: 0.2em;
@@ -281,6 +289,31 @@ section .flex-container {
     display: flex;
     flex-flow: row wrap;
   }
+}
+
+.work-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 4rem;
+  width: 90%;
+  filter: grayscale(100%);
+}
+.project-container:hover {
+  filter: grayscale(0);
+}
+.project-container img {
+  display: block;
+  max-width: 500px;
+}
+
+.border {
+  border: 2px solid white;
 }
 
 .img-container {
@@ -323,13 +356,15 @@ section .flex-container {
 }
 
 .stack .sub-header {
+  border: none;
   margin-top: 2rem;
   font-size: 2rem;
   font-weight: lighter;
 }
 .stack .img-container {
   width: 200px;
-  border: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: center;

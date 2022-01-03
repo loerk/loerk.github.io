@@ -34,8 +34,12 @@ header {
     transform: 1s;
     font-size: 3em;
     span {
-      color: transparent;
       font-size:.5em;
+      color:transparent;
+      @include a.max-sm {
+        color:white;
+      }
     }
   }
 }
+
