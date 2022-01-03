@@ -139,16 +139,22 @@ you are awesome!
       <section id="contact" class="contact">
         <h2 class="section-header">Contact</h2>
         <form method="POST" action="#">
-          <input type="text" name="Name" id="name" placeholder="Your Name" />
-          <input type="email" name="Email" id="emai" placeholder="Your Email" />
+          <div class="input-container">
+            <input type="text" name="Name" id="name" placeholder="Your Name" />
+          </div>
+          <div class="input-container">
+            <input type="email" name="Email" id="emai" placeholder="Your Email" />
+          </div>
+          <div class="input-container">
           <textarea
             name="text"
             id="text"
-            cols="30"
-            rows="10"
+            cols="20"
+            rows="1"
             placeholder="Your Message"
           ></textarea>
-          <a class="" href="mailto:fra.se@posteo.net"
+        </div>
+          <a class="button" href="mailto:fra.se@posteo.net"
             >send</a
           >
         </form>

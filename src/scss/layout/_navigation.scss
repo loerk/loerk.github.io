@@ -2,7 +2,7 @@
 
 .nav-container {
   position: fixed;
-  width:100%;
+  width: 100%;
   top: 0;
   z-index: 9999;
   align-items: center;
@@ -14,12 +14,11 @@
     background-color: white;
     color: black;
     @include a.center-content;
-    p{
+    p {
       font-family: a.$ff-head;
-      padding:1rem;
-      border-left:2px solid black;
-      border-right:2px solid black;
-
+      padding: 1rem;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
     }
   }
 
@@ -52,11 +51,10 @@
   li {
     font-size: 1em;
     text-transform: uppercase;
-    padding-block:1rem;
-    &:hover{
-      border-bottom:1px solid white;
-      border-top:1px solid white;
-
+    padding-block: 1rem;
+      &:hover {
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
     }
   }
   a {
@@ -64,7 +62,6 @@
     font-family: a.$ff-head;
     font-weight: 700;
     letter-spacing: 0.2rem;
-
   }
   a > [aria-hidden="true"] {
     font-family: "NeutralFaceBold", sans-serif;

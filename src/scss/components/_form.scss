@@ -1,0 +1,29 @@
+@use "../abstracts/" as a;
+
+form{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10em;
+    input{
+        font-family: a.$ff-head;
+        font-size: 2em;
+        margin-top:1.5em;
+        padding-block-start:2em;
+        border: none;
+        color: white;
+        background-color: transparent;
+        outline:none;
+        width:100%;
+    
+    }
+    textarea{
+        margin-top:1.5em;
+        padding-block-start:2em;
+        font-family: a.$ff-head;
+        font-size: 2em;
+        color: white;
+        border:none;
+        outline:none;
+        background-color: transparent;
+    }
+}
