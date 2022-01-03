@@ -8,58 +8,24 @@
     font-family: a.$ff-head;
   }
   }
-.work-container{
-   width:80%;
-   margin:0 auto;
-}
-.project-container{
-    margin-block:3rem;
 
-    filter: grayscale(100%);
-    
-    @include a.min-md {
-        display:grid;
-        grid-template-columns:200px minmax(400px, 600px);
-        grid-template-areas: 
-        'header . text'
-        'image . .';
-        gap:2rem;
-    }
- &:hover{
-    filter: grayscale(0);
-
- }
-
-
-img{
-  width:100%;
-  
-}
-.project-header{
-    padding-top:6rem;
-    padding-bottom:4rem;
-    line-height:1.5;
-    font-size:1.5rem;
-    text-align:center;
-    grid-area: 'header';
-    @include a.min-md {
-    text-align:start;
-
-    }
-}
 .link-container{
     grid-area: 'image';
     padding-block:6rem;
+    @include a.max-md {
+        padding-block:2rem;
+    
+        }
 }
 .text-container{
     padding-block:6rem;
     grid-area: 'text';
-    @include a.min-md {
-        
+    @include a.max-md {
+        padding-block:2rem;
     
         }
 }
-}
+
 
 
 .border{

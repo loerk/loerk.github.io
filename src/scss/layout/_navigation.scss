@@ -17,7 +17,9 @@
     p{
       font-family: a.$ff-head;
       padding:1rem;
-      border:2px solid black;
+      border-left:2px solid black;
+      border-right:2px solid black;
+
     }
   }
 
@@ -50,12 +52,19 @@
   li {
     font-size: 1em;
     text-transform: uppercase;
+    padding-block:1rem;
+    &:hover{
+      border-bottom:1px solid white;
+      border-top:1px solid white;
+
+    }
   }
   a {
     color: a.$clr-light;
     font-family: a.$ff-head;
     font-weight: 700;
     letter-spacing: 0.2rem;
+
   }
   a > [aria-hidden="true"] {
     font-family: "NeutralFaceBold", sans-serif;
