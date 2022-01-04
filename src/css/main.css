@@ -278,6 +278,10 @@ header:hover .h1-container > .h1-horizontal > div > span {
     background: rgba(255, 255, 255, 0.1);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
