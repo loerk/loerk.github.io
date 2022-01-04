@@ -8,15 +8,15 @@
   align-items: center;
   justify-content: space-between;
   .logo {
-    width: 5rem;
+    width: 3.5rem;
     aspect-ratio: 1;
-    margin: 1rem;
+    margin: 2rem;
     background-color: white;
     color: black;
     @include a.center-content;
     p {
       font-family: a.$ff-head;
-      padding: 1rem;
+      padding: .5rem;
       border-left: 2px solid black;
       border-right: 2px solid black;
     }

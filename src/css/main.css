@@ -109,6 +109,18 @@ a {
   gap: 1rem;
 }
 
+.fa-w {
+  color: white;
+}
+
+.fa-b {
+  color: black;
+}
+
+.text-center {
+  text-align: center;
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -164,9 +176,9 @@ header:hover .h1-container > .h1-horizontal > div > span {
   justify-content: space-between;
 }
 .nav-container .logo {
-  width: 5rem;
+  width: 3.5rem;
   aspect-ratio: 1;
-  margin: 1rem;
+  margin: 2rem;
   background-color: white;
   color: black;
   display: flex;
@@ -175,7 +187,7 @@ header:hover .h1-container > .h1-horizontal > div > span {
 }
 .nav-container .logo p {
   font-family: "NeutralFace", sans-serif;
-  padding: 1rem;
+  padding: 0.5rem;
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
@@ -329,6 +341,16 @@ section .flex-container {
 
 .input-container {
   border-bottom: 3px solid white;
+}
+
+.icon-container {
+  width: 80%;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .border {
@@ -488,6 +510,17 @@ form textarea {
 
 ::-webkit-scrollbar-thumb {
   background: white;
+}
+
+.footer {
+  padding: 1rem;
+  width: 15rem;
+  margin: 0 auto;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.footer p {
+  font-family: "NeutralFace", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

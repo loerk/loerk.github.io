@@ -31,7 +31,13 @@
 }
 
 
-
+.icon-container{
+width:80%;
+margin:0 auto;
+gap:2rem;
+padding:1rem;
+@include a.center-content
+}
 .border{
     border:2px solid white;
   }

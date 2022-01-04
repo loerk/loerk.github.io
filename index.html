@@ -13,6 +13,7 @@ you are awesome!
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="nav.js" defer></script>
     <title>FS</title>
   </head>
@@ -63,8 +64,15 @@ you are awesome!
       <section id="about" class="about">
         <h2 class="section-header">WHOAMI</h2>
         <div class="py-5 text-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem blanditiis ab officiis reiciendis, eos quaerat voluptas possimus necessitatibus iure officia ea deleniti maxime assumenda debitis tenetur odit aperiam. Repudiandae expedita a, nobis ipsum iure, itaque deleniti unde officiis reprehenderit quis optio aspernatur incidunt voluptas eum nesciunt consectetur illum illo praesentium.</p>
-                  </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+            blanditiis ab officiis reiciendis, eos quaerat voluptas possimus
+            necessitatibus iure officia ea deleniti maxime assumenda debitis
+            tenetur odit aperiam. Repudiandae expedita a, nobis ipsum iure,
+            itaque deleniti unde officiis reprehenderit quis optio aspernatur
+            incidunt voluptas eum nesciunt consectetur illum illo praesentium.
+          </p>
+        </div>
         <div class="flex-container">
           <div class="img-container">
             <img src="src/images/mountains.jpg" alt="" />
@@ -105,36 +113,71 @@ you are awesome!
       </section>
       <section id="portfolio" class="portfolio">
         <h2 class="section-header">Portfolio</h2>
-      <div class="work-container">
-        <div class="project-container">
-          <h3 class="project-header">Coding Journal <span>2021</span></h3> 
-          <div class="link-container">
-            <a href="https://loerk.github.io/coding-journey/index.html" target="_blank"><img src="src/images/journal.png" alt=""></a>
+        <div class="work-container">
+          <div class="project-container">
+            <h3 class="project-header">Coding Journal <span>2021</span></h3>
+            <div class="link-container">
+              <a
+                href="https://loerk.github.io/coding-journey/index.html"
+                target="_blank"
+                ><img src="src/images/journal.png" alt=""
+              /></a>
+            </div>
+            <div class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                laborum vitae magni error distinctio aspernatur consequatur
+                debitis perferendis cupiditate sequi.
+              </p>
+            </div>
           </div>
-          <div class="text-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laborum vitae magni error distinctio aspernatur consequatur debitis perferendis cupiditate sequi.</p>
+          <div class="project-container">
+            <h3 class="project-header">
+              DCI Hackathon <span>2021</span> (1st price)
+            </h3>
+            <div class="link-container">
+              <a href="https://stir-it-up.vercel.app/" target="_blank"
+                ><img src="src/images/bbq.png" alt=""
+              /></a>
+            </div>
+            <div class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                laborum vitae magni error distinctio aspernatur consequatur
+                debitis perferendis cupiditate sequi.
+              </p>
+            </div>
+          </div>
+          <div class="project-container">
+            <h3 class="project-header">Portfolio-Page <span>2022</span></h3>
+            <div class="link-container">
+              <a href="https://loerk.github.io/" target="_blank"
+                ><img class="border" src="src/images/portfolio.png" alt=""
+              /></a>
+            </div>
+            <div class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+                laborum vitae magni error distinctio aspernatur consequatur
+                debitis perferendis cupiditate sequi.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="project-container">
-          <h3 class="project-header">DCI Hackathon <span>2021</span> (1st price)</h3> 
-          <div class="link-container">
-            <a href="https://stir-it-up.vercel.app/" target="_blank"><img src="src/images/bbq.png" alt=""></a>
-          </div>
-          <div class="text-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laborum vitae magni error distinctio aspernatur consequatur debitis perferendis cupiditate sequi.</p>
-          </div>
+        <div class="flex icon-container">
+          <a
+            href="https://codepen.io/Fraser_Fou"
+            target="_blank"
+            title="codepen"
+            class="fa fa-w fa-codepen fa-3x"
+          ></a>
+          <a
+            href="https://github.com/loerk"
+            target="_blank"
+            title="github"
+            class="fa fa-w fa-github fa-3x"
+          ></a>
         </div>
-        <div class="project-container">
-          <h3 class="project-header">Portfolio-Page <span>2022</span></h3> 
-          <div class="link-container">
-            <a href="https://loerk.github.io/" target="_blank"><img class="border" src="src/images/portfolio.png" alt=""></a>
-          </div>
-          <div class="text-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, laborum vitae magni error distinctio aspernatur consequatur debitis perferendis cupiditate sequi.</p>
-          </div>
-        </div>
-      </div>
-      
       </section>
       <section id="contact" class="contact">
         <h2 class="section-header">Contact</h2>
@@ -143,23 +186,50 @@ you are awesome!
             <input type="text" name="Name" id="name" placeholder="Your Name" />
           </div>
           <div class="input-container">
-            <input type="email" name="Email" id="emai" placeholder="Your Email" />
+            <input
+              type="email"
+              name="Email"
+              id="emai"
+              placeholder="Your Email"
+            />
           </div>
           <div class="input-container">
-          <textarea
-            name="text"
-            id="text"
-            cols="20"
-            rows="1"
-            placeholder="Your Message"
-          ></textarea>
-        </div>
-          <a class="button" href="mailto:fra.se@posteo.net"
-            >send</a
-          >
+            <textarea
+              name="text"
+              id="text"
+              cols="20"
+              rows="1"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <a class="button" href="mailto:fra.se@posteo.net">send</a>
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer text-center">
+        <p>&copy; loerk 2022</p>
+        <div class="icon-container">
+          <a
+            href="https://codepen.io/Fizzi_Fou"
+            class="fa fa-b fa-codepen fa-x"
+            target="_blank"
+            title="codepen"
+          ></a>
+          <a
+            href="https://github.com/loerk"
+            class="fa fa-b fa-github fa-x"
+            target="_blank"
+            title="github"
+          ></a>
+          <a
+            href="mailto:fra.se@posteo.net"
+            class="fa fa-b  fa-send fa-x"
+            target="_blank"
+            title="send email"
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
