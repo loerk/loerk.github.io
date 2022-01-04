@@ -1,81 +1,79 @@
 @use "../abstracts/" as a;
 
-.drop-down{
-    margin-bottom:2rem;
-    cursor: pointer;
-    border:none;
-    position:relative;
-    left:80px;
-    width:30px;
-    aspect-ratio: 1;
-    background:center/ cover no-repeat url("../images/drop-down.png");
+.drop-down {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border: none;
+  position: relative;
+  left: 80px;
+  width: 30px;
+  aspect-ratio: 1;
+  background: center/ cover no-repeat url("../images/drop-down.png");
 
-    @include a.min-sm {
-        left:180px;
-    }
-}
-
-.portfolio{
-    .data-container{
-        position:relative;
-    bottom:100px;
-    @include a.min-sm {
-        bottom:300px;
-    }
-  
-    }
-    .img-container{
-        border:1px solid white;
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
-.work-container{
-    width:80%;
-    margin:0 auto;
- }
- .project-container{
-     margin-block:3rem;
- 
-     filter: grayscale(100%);
-     
-     @include a.min-md {
-         display:grid;
-         grid-template-columns:200px minmax(400px, 600px);
-         grid-template-areas: 
-         'header . text'
-         'image . .';
-         gap:2rem;
-     }
-  &:hover{
-     filter: grayscale(0);
- 
+  @include a.min-sm {
+    left: 180px;
   }
- 
- 
- img{
-   width:100%;
-   
- }
- .project-header{
-     padding-top:6rem;
-     padding-bottom:4rem;
-     line-height:1.5;
-     font-size:1.5rem;
- 
-     grid-area: 'header';
-     @include a.max-md {
-     padding-block:2rem;
- 
-     }
- }
+}
+
+.portfolio {
+  .data-container {
+     display:none;
+    // display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    bottom: 100px;
+    
+    @include a.min-sm {
+      bottom: 300px;
+    }
+  }
+}
+.link-container1 {
+  background: center/contain no-repeat url("../images/journal.png");
+}
+
+.link-container2 {
+  background: center/contain no-repeat url("../images/bbq.png");
+}
+
+.link-container3 {
+  background: center/contain no-repeat url("../images/portfolio.png");
+}
+
+.work-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.project-container {
+  margin-block: 3rem;
+
+  filter: grayscale(100%);
+
+  @include a.min-md {
+    display: grid;
+    grid-template-columns: 200px minmax(400px, 600px);
+    grid-template-areas:
+      "header . text"
+      "image . .";
+    gap: 2rem;
+  }
+  &:hover {
+    filter: grayscale(0);
+  }
+
+  img {
+    width: 100%;
+  }
+  .project-header {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+
+    grid-area: "header";
+    @include a.max-md {
+      padding-block: 2rem;
+    }
+  }
 }

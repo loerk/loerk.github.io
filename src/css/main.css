@@ -325,13 +325,8 @@ section .flex-container {
 }
 
 .link-container {
-  grid-area: "image";
-  padding-block: 6rem;
-}
-@media (max-width: 55em) {
-  .link-container {
-    padding-block: 2rem;
-  }
+  width: 100%;
+  height: 200px;
 }
 
 .text-container {
@@ -363,8 +358,6 @@ section .flex-container {
 }
 
 .data-container {
-  display: flex;
-  justify-content: center;
   font-family: "NeutralFace", sans-serif;
   padding: 2rem;
   color: black;
@@ -452,6 +445,9 @@ section .flex-container {
 }
 
 .portfolio .data-container {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
   bottom: 100px;
 }
@@ -460,8 +456,17 @@ section .flex-container {
     bottom: 300px;
   }
 }
-.portfolio .img-container {
-  border: 1px solid white;
+
+.link-container1 {
+  background: center/contain no-repeat url("../images/journal.png");
+}
+
+.link-container2 {
+  background: center/contain no-repeat url("../images/bbq.png");
+}
+
+.link-container3 {
+  background: center/contain no-repeat url("../images/portfolio.png");
 }
 
 .work-container {
