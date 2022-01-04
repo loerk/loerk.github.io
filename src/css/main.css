@@ -362,6 +362,17 @@ section .flex-container {
   border: 2px solid white;
 }
 
+.data-container {
+  display: flex;
+  justify-content: center;
+  font-family: "NeutralFace", sans-serif;
+  padding: 2rem;
+  color: black;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: white;
+}
+
 .img-container {
   margin: 0 auto;
   width: 200px;
@@ -425,6 +436,7 @@ section .flex-container {
 }
 
 .drop-down {
+  margin-bottom: 2rem;
   cursor: pointer;
   border: none;
   position: relative;
@@ -439,9 +451,17 @@ section .flex-container {
   }
 }
 
-portfolio .img-container {
-  display: flex;
-  position: absolute;
+.portfolio .data-container {
+  position: relative;
+  bottom: 100px;
+}
+@media (min-width: 35em) {
+  .portfolio .data-container {
+    bottom: 300px;
+  }
+}
+.portfolio .img-container {
+  border: 1px solid white;
 }
 
 .work-container {

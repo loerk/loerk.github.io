@@ -1,6 +1,7 @@
 @use "../abstracts/" as a;
 
 .drop-down{
+    margin-bottom:2rem;
     cursor: pointer;
     border:none;
     position:relative;
@@ -14,10 +15,17 @@
     }
 }
 
-portfolio{
+.portfolio{
+    .data-container{
+        position:relative;
+    bottom:100px;
+    @include a.min-sm {
+        bottom:300px;
+    }
+  
+    }
     .img-container{
-        display:flex;
-        position:absolute;
+        border:1px solid white;
 
     }
 }
