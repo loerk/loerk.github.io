@@ -86,7 +86,7 @@
   }
   @include a.min-sm {
     //only top and bottom
-    padding-block: 2rem;
+    padding-block: .5rem;
     //smallest 3rem middle growth factor and last max padding
     padding-inline: clamp(3rem, 10vw, 10rem);
     gap: clamp(1.5rem, 5vw, 3rem);

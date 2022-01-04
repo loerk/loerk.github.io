@@ -1,3 +1,5 @@
+@use "../abstracts/" as a;
+
 $spaces: (1, 2, 3, 4, 5);
 
 @each $space in $spaces {
@@ -35,3 +37,6 @@ color:white;
   text-align:center;
 }
 
+.ff-main{
+  font-family: a.$ff-head;
+}
