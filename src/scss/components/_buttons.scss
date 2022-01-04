@@ -6,7 +6,6 @@
   color: white;
   border-left: 2px solid white;
   border-right: 2px solid white;
-
   font-size: .9rem;
   width: 100%;
   padding: 1rem;
@@ -28,4 +27,7 @@
 }
 ::-webkit-scrollbar-thumb {
   background: rgb(255, 255, 255);
+}
+.mobile-nav-toggle{
+  cursor: pointer;
 }

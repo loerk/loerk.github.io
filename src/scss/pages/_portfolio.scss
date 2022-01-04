@@ -1,6 +1,26 @@
 @use "../abstracts/" as a;
 
+.drop-down{
+    cursor: pointer;
+    border:none;
+    position:relative;
+    left:80px;
+    width:30px;
+    aspect-ratio: 1;
+    background:center/ cover no-repeat url("../images/drop-down.png");
 
+    @include a.min-sm {
+        left:180px;
+    }
+}
+
+portfolio{
+    .img-container{
+        display:flex;
+        position:absolute;
+
+    }
+}
 
 
 
