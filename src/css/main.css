@@ -190,7 +190,7 @@ header:hover .h1-container > .h1-horizontal > div > span {
     display: block;
     position: absolute;
     z-index: 9999;
-    background: no-repeat url("../images/icon-hamburger.svg");
+    background: no-repeat url("../images/hamburger-open.png");
     width: 2rem;
     aspect-ratio: 1;
     border: 0;
@@ -199,7 +199,7 @@ header:hover .h1-container > .h1-horizontal > div > span {
   }
 }
 .nav-container .mobile-nav-toggle[aria-expanded=true] {
-  background: no-repeat url("../images/icon-close.svg");
+  background: no-repeat url("../images/hamburger-close.svg");
 }
 
 .primary-navigation {
@@ -210,6 +210,7 @@ header:hover .h1-container > .h1-horizontal > div > span {
   font-size: 1em;
   text-transform: uppercase;
   padding-block: 1rem;
+  border: 1px solid transparent;
 }
 .primary-navigation li:hover {
   border-bottom: 1px solid white;
@@ -222,7 +223,7 @@ header:hover .h1-container > .h1-horizontal > div > span {
   letter-spacing: 0.2rem;
 }
 .primary-navigation a > [aria-hidden=true] {
-  font-family: "NeutralFaceBold", sans-serif;
+  font-family: "NeutralFace", sans-serif, sans-serif;
   margin-inline-end: 0.75em;
 }
 @media (min-width: 35em) and (max-width: 55em) {
@@ -439,7 +440,7 @@ form {
 }
 form input {
   font-family: "NeutralFace", sans-serif;
-  font-size: 2em;
+  font-size: 1.3em;
   margin-top: 1.5em;
   padding-block-start: 2em;
   border: none;
@@ -452,7 +453,7 @@ form textarea {
   margin-top: 1.5em;
   padding-block-start: 2em;
   font-family: "NeutralFace", sans-serif;
-  font-size: 2em;
+  font-size: 1.3em;
   color: white;
   border: none;
   outline: none;
@@ -464,7 +465,7 @@ form textarea {
   background-color: transparent;
   color: white;
   border: 2px solid white;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   width: 100%;
   padding: 1rem;
   margin-top: 10rem;
@@ -475,6 +476,18 @@ form textarea {
 .button:hover {
   background-color: #fff;
   color: black;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
 }
 
 /*# sourceMappingURL=main.css.map */
