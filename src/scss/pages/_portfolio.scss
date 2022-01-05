@@ -67,18 +67,18 @@
   margin-block: 3rem;
   filter: grayscale(100%);
 
-  @include a.min-md {
-    margin-top: 4rem;
-    display: grid;
-    grid-template-areas:
-      "header . text"
-      "image . .";
-    gap: 2rem;
+    @include a.min-md {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-areas:
+        "header . text"
+        "image . .";
+      gap: 2rem;
 
-    &:hover .link-container {
-      animation: smoth 2s ease forwards;
+      &:hover .link-container {
+        animation: smoth 2s ease forwards;
+      }
     }
-  }
   &:hover {
     filter: grayscale(0);
   }
@@ -86,6 +86,7 @@
   img {
     width: 100%;
   }
+  
   .project-header {
     font-size: 1.5rem;
     grid-area: "header";
@@ -106,3 +107,4 @@
     width: 400px;
   }
 }
+
