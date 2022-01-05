@@ -415,6 +415,7 @@ section .flex-container {
   width: 200px;
   border-left: 2px solid white;
   border-right: 2px solid white;
+  transition: 1s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -428,54 +429,28 @@ section .flex-container {
 }
 .stack .img-container:hover p {
   transform: scale(1.6);
-  transition: 1s ease;
   color: black;
 }
 
-.drop-down {
-  margin-bottom: 2rem;
-  cursor: pointer;
-  border: none;
-  position: relative;
-  left: 80px;
-  width: 30px;
-  aspect-ratio: 1;
-  background: center/cover no-repeat url("../images/drop-down.png");
-}
-@media (min-width: 35em) {
-  .drop-down {
-    left: 180px;
-  }
-}
-
-.portfolio .data-container {
-  display: none;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-  bottom: 100px;
-}
-@media (min-width: 35em) {
-  .portfolio .data-container {
-    bottom: 300px;
-  }
+.portfolio .link-container {
+  border: 1px solid white;
 }
 
 .link-container1 {
-  background: center/contain no-repeat url("../images/journal.png");
+  background: center/cover no-repeat url("../images/journal.png");
 }
 
 .link-container2 {
-  background: center/contain no-repeat url("../images/bbq.png");
+  background: center/cover no-repeat url("../images/bbq.png");
 }
 
 .link-container3 {
-  background: center/contain no-repeat url("../images/portfolio.png");
+  background: center/cover no-repeat url("../images/portfolio.png");
 }
 
 .work-container {
   width: 80%;
-  margin: 0 auto;
+  margin: 8rem auto;
 }
 
 .project-container {
@@ -484,10 +459,13 @@ section .flex-container {
 }
 @media (min-width: 55em) {
   .project-container {
+    margin-top: 4rem;
     display: grid;
-    grid-template-columns: 200px minmax(400px, 600px);
     grid-template-areas: "header . text" "image . .";
     gap: 2rem;
+  }
+  .project-container:hover .link-container {
+    animation: smoth 2s ease forwards;
   }
 }
 .project-container:hover {
@@ -497,9 +475,6 @@ section .flex-container {
   width: 100%;
 }
 .project-container .project-header {
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-  line-height: 1.5;
   font-size: 1.5rem;
   grid-area: "header";
 }
@@ -508,7 +483,20 @@ section .flex-container {
     padding-block: 2rem;
   }
 }
+@media (min-width: 55em) {
+  .project-container .project-header {
+    padding: 0;
+  }
+}
 
+@keyframes smoth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+}
 form {
   width: 60%;
   margin: 0 auto;
@@ -549,6 +537,7 @@ form textarea {
   text-align: center;
   font-family: "NeutralFace", sans-serif;
   letter-spacing: 0.5rem;
+  transition: 0.5s;
 }
 .button:hover {
   background-color: #fff;

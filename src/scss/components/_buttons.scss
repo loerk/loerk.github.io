@@ -13,7 +13,8 @@
   text-align:center;
   font-family:a.$ff-head;
   letter-spacing: .5rem;
-&:hover{
+  transition:.5s;
+  &:hover{
     background-color: #fff;
     color:black;
 }

@@ -1,62 +1,83 @@
 @use "../abstracts/" as a;
 
-.drop-down {
-  margin-bottom: 2rem;
-  cursor: pointer;
-  border: none;
-  position: relative;
-  left: 80px;
-  width: 30px;
-  aspect-ratio: 1;
-  background: center/ cover no-repeat url("../images/drop-down.png");
+// .drop-down {
+//   margin-bottom: 2rem;
+//   cursor: pointer;
+//   border: none;
+//   position: relative;
+//   left: 80px;
+//   width: 30px;
+//   aspect-ratio: 1;
+//   background: center/ cover no-repeat url("../images/drop-down.png");
 
-  @include a.min-sm {
-    left: 180px;
-  }
-}
+//   @include a.min-sm {
+//     left: 180px;
+//   }
+// }
 
-.portfolio {
-  .data-container {
-     display:none;
-    // display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    bottom: 100px;
+// .drop-down:hover ~ .data-container,
+// .drop-down:active ~ .data-container,
+// .data-container:hover ~ .data-container{
+// width:1000px;
+// height:300px;
+//   top:100px;
+//     display:flex;
+ 
+// }
+
+// .portfolio {
+//   .data-container {
+//     display: flex;
+//     justify-content: center;
     
-    @include a.min-sm {
-      bottom: 300px;
-    }
+//     bottom:50px;
+
+//     @include a.min-sm {
+//       bottom: 30px;
+//       display: none;
+//     }
+//   }
+// }
+
+.portfolio{
+  .link-container{
+    border:1px solid white;
   }
 }
 .link-container1 {
-  background: center/contain no-repeat url("../images/journal.png");
+  background: center/cover no-repeat url("../images/journal.png");
 }
 
 .link-container2 {
-  background: center/contain no-repeat url("../images/bbq.png");
+  background: center/cover no-repeat url("../images/bbq.png");
 }
 
 .link-container3 {
-  background: center/contain no-repeat url("../images/portfolio.png");
+ 
+  background: center/cover no-repeat url("../images/portfolio.png");
 }
 
 .work-container {
   width: 80%;
-  margin: 0 auto;
+  margin: 8rem auto;
 }
 .project-container {
   margin-block: 3rem;
-
   filter: grayscale(100%);
 
   @include a.min-md {
+    margin-top:4rem;
     display: grid;
-    grid-template-columns: 200px minmax(400px, 600px);
     grid-template-areas:
       "header . text"
       "image . .";
     gap: 2rem;
+    
+    &:hover .link-container{
+      animation:smoth 2s ease forwards;
+
+    }
+
   }
   &:hover {
     filter: grayscale(0);
@@ -65,15 +86,23 @@
   img {
     width: 100%;
   }
-  .project-header {
-    padding-top: 6rem;
-    padding-bottom: 4rem;
-    line-height: 1.5;
+  .project-header { 
     font-size: 1.5rem;
-
     grid-area: "header";
     @include a.max-md {
       padding-block: 2rem;
     }
+    @include a.min-md {
+      padding:0;
+    }
   }
+}
+
+@keyframes smoth {
+from{
+width:0;
+}
+to{
+width:400px;
+}
 }
