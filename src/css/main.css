@@ -361,15 +361,6 @@ section .flex-container {
   border: 2px solid white;
 }
 
-.data-container {
-  font-family: "NeutralFace", sans-serif;
-  padding: 2rem;
-  color: black;
-  width: 80%;
-  margin: 2rem auto;
-  background-color: white;
-}
-
 .img-container {
   margin: 0 auto;
   width: 200px;
@@ -434,6 +425,9 @@ section .flex-container {
 
 .portfolio .link-container {
   border: 1px solid white;
+}
+.portfolio .icon-container {
+  padding-top: 6rem;
 }
 
 .link-container1 {
