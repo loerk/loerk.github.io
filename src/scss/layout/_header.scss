@@ -31,11 +31,12 @@ header {
     text-transform: uppercase;
     font-family: a.$ff-head;
     letter-spacing: 0.5rem;
-    transform: 1s;
     font-size: 3em;
     span {
       font-size:.5em;
       color:transparent;
+      transition: 1s ease-out;
+
       @include a.max-sm {
         color:white;
       }

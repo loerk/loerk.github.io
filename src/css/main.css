@@ -158,12 +158,12 @@ header:hover .h1-container > .h1-horizontal > div > span {
   text-transform: uppercase;
   font-family: "NeutralFace", sans-serif;
   letter-spacing: 0.5rem;
-  transform: 1s;
   font-size: 3em;
 }
 .h1-container .h1-horizontal span {
   font-size: 0.5em;
   color: transparent;
+  transition: 1s ease-out;
 }
 @media (max-width: 35em) {
   .h1-container .h1-horizontal span {
@@ -417,15 +417,19 @@ section .flex-container {
   justify-content: center;
   margin-block: 1rem;
   overflow: hidden;
-  transform: rotateY(180deg);
 }
-.stack .img-container:hover {
-  transform: rotateY(0);
-  background-color: white;
-}
-.stack .img-container:hover p {
-  transform: scale(1.6);
-  color: black;
+@media (min-width: 55em) {
+  .stack .img-container {
+    transform: rotateY(180deg);
+  }
+  .stack .img-container:hover {
+    transform: rotateY(0);
+    background-color: white;
+  }
+  .stack .img-container:hover p {
+    transform: scale(1.6);
+    color: black;
+  }
 }
 
 .portfolio .link-container {
@@ -495,6 +499,9 @@ section .flex-container {
     padding: 0;
   }
 }
+.project-container .text-container {
+  padding-top: 0;
+}
 
 form {
   width: 60%;
@@ -513,6 +520,7 @@ form input {
   width: 100%;
 }
 form textarea {
+  width: 100%;
   margin-top: 1.5em;
   padding-block-start: 2em;
   font-family: "NeutralFace", sans-serif;
