@@ -3,6 +3,9 @@
 .text-container{
     text-align: justify;
     line-height:1.5;
+    @include a.max-sm{
+      text-align:start;
+    }
     p{
     font-size:1rem;
     font-family: a.$ff-head;

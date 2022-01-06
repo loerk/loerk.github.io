@@ -7,7 +7,7 @@
   src: url(../fonts/NeutralFace-Bold.otf) format("opentype");
 }
 h1, h2, h3, p {
-  font-family: "NeutralFaceBold";
+  font-family: "NeutralFace";
 }
 
 *, *::after, *::before {
@@ -323,6 +323,11 @@ section .flex-container {
   text-align: justify;
   line-height: 1.5;
 }
+@media (max-width: 35em) {
+  .text-container {
+    text-align: start;
+  }
+}
 .text-container p {
   font-size: 1rem;
   font-family: "NeutralFace", sans-serif;
@@ -425,6 +430,13 @@ section .flex-container {
 
 .portfolio .link-container {
   border: 1px solid white;
+  transition: 2s;
+  grid-area: "image";
+}
+@media (min-width: 55em) {
+  .portfolio .link-container {
+    width: 0px;
+  }
 }
 .portfolio .icon-container {
   padding-top: 6rem;
@@ -455,11 +467,12 @@ section .flex-container {
   .project-container {
     margin-top: 4rem;
     display: grid;
-    grid-template-areas: "header . text" "image . .";
+    grid-template-columns: 200px 400px minmax(200px, 800px);
+    grid-template-areas: "header image text";
     gap: 2rem;
   }
   .project-container:hover .link-container {
-    animation: smoth 2s ease forwards;
+    width: 400px;
   }
 }
 .project-container:hover {
@@ -483,14 +496,6 @@ section .flex-container {
   }
 }
 
-@keyframes smoth {
-  from {
-    width: 0;
-  }
-  to {
-    width: 400px;
-  }
-}
 form {
   width: 60%;
   margin: 0 auto;

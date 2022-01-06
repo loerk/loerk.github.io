@@ -1,6 +1,7 @@
 @use "../abstracts/" as a;
 
 .stack {
+  
   .sub-header {
     border: none;
     line-height:1.5;
@@ -24,10 +25,11 @@
     &:hover {
       transform: rotateY(0);
       background-color: white;
+      p {
+        transform: scale(1.6);
+        color: black;
+      }
     }
-    &:hover p {
-      transform: scale(1.6);
-      color: black;
-    }
+    
   }
 }
