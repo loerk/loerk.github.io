@@ -133,6 +133,7 @@ header {
 }
 
 .h1-container {
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -204,10 +205,18 @@ header {
   transition: 1s ease-out;
 }
 .h1-container .sub-header {
-  bottom: 30px;
+  position: relative;
+  top: 300px;
+  letter-spacing: 1.5rem;
   font-size: 0rem;
   font-weight: 600;
   animation: rise 4s ease-in-out 1s forwards;
+}
+@media (min-width: 55em) {
+  .h1-container .sub-header {
+    top: 220px;
+    left: -60px;
+  }
 }
 
 @keyframes rise {
