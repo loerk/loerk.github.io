@@ -32,15 +32,70 @@ header {
     font-family: a.$ff-head;
     letter-spacing: 0.5rem;
     font-size: 3em;
+    
+    @include a.max-sm {
+      color:white;
+      .first-name{
+        position:relative;
+      }
+      .last-name{
+        margin-left:6rem;
+        position:relative;
+      }
+      .first-name>span::before{
+        content:'ull';
+        position:absolute;
+        top:110px;
+        left:-5px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        animation: tb 4s forwards;
+      }
+      .last-name>span::before{
+        content:'tack';
+        position:absolute;
+        top:110px;
+        left:1px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        animation: tb 4s forwards;
+      }
+    }
     span {
       font-size:.5em;
       color:transparent;
       transition: 1s ease-out;
+      
 
       @include a.max-sm {
         color:white;
+        
       }
     }
   }
+  .sub-header{
+    bottom:30px;
+    font-size:0rem;
+    font-weight:600;
+    animation: rise 4s ease-in-out forwards;
+    animation-delay: 4s;
+   
+  }
+}
+@keyframes rise {
+  from{
+    font-size:0;
+  }
+  to{
+    font-size:2rem;
+  }
 }
 
+@keyframes tb {
+from{
+  top:-999px;
+}
+to{
+top:110px;
+}
+}

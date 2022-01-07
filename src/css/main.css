@@ -160,6 +160,36 @@ header:hover .h1-container > .h1-horizontal > div > span {
   letter-spacing: 0.5rem;
   font-size: 3em;
 }
+@media (max-width: 35em) {
+  .h1-container .h1-horizontal {
+    color: white;
+  }
+  .h1-container .h1-horizontal .first-name {
+    position: relative;
+  }
+  .h1-container .h1-horizontal .last-name {
+    margin-left: 6rem;
+    position: relative;
+  }
+  .h1-container .h1-horizontal .first-name > span::before {
+    content: "ull";
+    position: absolute;
+    top: 110px;
+    left: -5px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    animation: tb 4s forwards;
+  }
+  .h1-container .h1-horizontal .last-name > span::before {
+    content: "tack";
+    position: absolute;
+    top: 110px;
+    left: 1px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    animation: tb 4s forwards;
+  }
+}
 .h1-container .h1-horizontal span {
   font-size: 0.5em;
   color: transparent;
@@ -170,7 +200,30 @@ header:hover .h1-container > .h1-horizontal > div > span {
     color: white;
   }
 }
+.h1-container .sub-header {
+  bottom: 30px;
+  font-size: 0rem;
+  font-weight: 600;
+  animation: rise 4s ease-in-out forwards;
+  animation-delay: 4s;
+}
 
+@keyframes rise {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 2rem;
+  }
+}
+@keyframes tb {
+  from {
+    top: -999px;
+  }
+  to {
+    top: 110px;
+  }
+}
 .nav-container {
   position: fixed;
   width: 100%;
@@ -565,7 +618,7 @@ section .flex-container {
 a {
   transition: 0.5s;
 }
-a:hover {
+a:hover:not(.button) {
   transform: scale(1.5);
 }
 
@@ -595,6 +648,9 @@ form textarea {
   border: none;
   outline: none;
   background-color: transparent;
+}
+form .button:active {
+  box-shadow: 17px 17px 0px 0px #EBEBEB;
 }
 
 .button {
