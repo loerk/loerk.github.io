@@ -160,6 +160,22 @@ header:hover .h1-container > .h1-horizontal > div > span {
   letter-spacing: 0.5rem;
   font-size: 3em;
 }
+.h1-container .h1-horizontal .first-name > span::before {
+  content: "ull";
+  position: absolute;
+  left: -5px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  animation: tb-max 4s forwards;
+}
+.h1-container .h1-horizontal .last-name > span::before {
+  content: "tack";
+  position: absolute;
+  right: 100px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  animation: tb-max 4s forwards;
+}
 @media (max-width: 35em) {
   .h1-container .h1-horizontal {
     color: white;
@@ -178,7 +194,7 @@ header:hover .h1-container > .h1-horizontal > div > span {
     left: -5px;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    animation: tb 4s forwards;
+    animation: tb-min 4s forwards;
   }
   .h1-container .h1-horizontal .last-name > span::before {
     content: "tack";
@@ -187,25 +203,19 @@ header:hover .h1-container > .h1-horizontal > div > span {
     left: 1px;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    animation: tb 4s forwards;
+    animation: tb-min 4s forwards;
   }
 }
 .h1-container .h1-horizontal span {
   font-size: 0.5em;
-  color: transparent;
+  color: white;
   transition: 1s ease-out;
-}
-@media (max-width: 35em) {
-  .h1-container .h1-horizontal span {
-    color: white;
-  }
 }
 .h1-container .sub-header {
   bottom: 30px;
   font-size: 0rem;
   font-weight: 600;
-  animation: rise 4s ease-in-out forwards;
-  animation-delay: 4s;
+  animation: rise 4s ease-in-out 4s forwards;
 }
 
 @keyframes rise {
@@ -216,12 +226,20 @@ header:hover .h1-container > .h1-horizontal > div > span {
     font-size: 2rem;
   }
 }
-@keyframes tb {
+@keyframes tb-min {
   from {
     top: -999px;
   }
   to {
     top: 110px;
+  }
+}
+@keyframes tb-max {
+  from {
+    top: -999px;
+  }
+  to {
+    top: 150px;
   }
 }
 .nav-container {
