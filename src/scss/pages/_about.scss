@@ -1,39 +1,38 @@
 @use "../abstracts/" as a;
 
-.img-container{
-    margin:0 auto;
-    width:200px;
-    aspect-ratio: 1;
-    filter: grayscale(100%);
+ 
+    .img-container {
+      margin: 0 auto;
+      width: 200px;
+      aspect-ratio: 1;
+      filter: grayscale(100%);
 
-
-    &:hover{
-        filter:grayscale(0);
-        transition:1s;
-    }
-    @include a.min-sm {
-        width:400px;
-    }
-    img{
-        display:block;
-        margin-top:2rem;
-        width:100%;
+      &:hover {
+        filter: grayscale(0);
+        transition: 1s;
+      }
+      @include a.min-sm {
+        width: 400px;
+      }
+      img {
+        display: block;
+        margin-top: 2rem;
+        width: 100%;
         aspect-ratio: 1;
-        border:5px solid black;
+        border: 5px solid black;
         object-fit: cover;
-        transition:.3s;
+        transition: 0.3s;
+      }
+      p {
+        text-align: center;
+      }
+    }
+ 
+  .about {
+    .text-container {
+      padding-block: 6rem;
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
 
-    }
-    p{
-        text-align:center;
-    }
-    
-
-}
-.about{
-    .text-container{
-        padding-block:6rem;
-        width:60%;
-        margin:0 auto;
-    }
-}

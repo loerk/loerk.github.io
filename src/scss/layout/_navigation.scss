@@ -11,7 +11,7 @@
     width: 3.5rem;
     aspect-ratio: 1;
     margin: 2rem;
-    background-color: white;
+    background-color: a.$clr-main;
     color: black;
     @include a.center-content;
     p {
@@ -54,10 +54,11 @@
     text-transform: uppercase;
     padding-block: 1rem;
     border: 1px solid transparent;
+    
 
       &:hover {
-        border-bottom: 1px solid white;
-        border-top: 1px solid white;
+        border-bottom: 1px solid a.$clr-main;
+        border-top: 1px solid a.$clr-main;
     }
   }
   a {

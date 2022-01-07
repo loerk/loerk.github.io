@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
-    border: 1px solid white;
+    border: 1px solid a.$clr-main;
     transition: 2s;
     grid-area: "image";
     @include a.min-md {
@@ -29,24 +29,39 @@
   }
 }
 
-.img-portfolio1 {
-  background-color: rgba(190, 71, 71, 0.507);
+.img-portfolio {
+  background-color:  a.$clr-main-light;
   .fas {
-    color: rgb(255, 38, 0);
+    color: black;
+  }
+  @include a.min-sm {
+  a {
+    transition:.5s;
+    &:hover:not(.button) {
+      transform: scale(1.5);
+    }
   }
 }
-.img-portfolio2 {
-  background-color: rgba(121, 216, 77, 0.507);
-  .fas {
-    color: rgb(60, 255, 0);
-  }
 }
-.img-portfolio3 {
-  background-color: rgba(48, 70, 196, 0.507);
-  .fas {
-    color: rgb(0, 68, 255);
-  }
-}
+
+// .img-portfolio1 {
+//   background-color: rgba(190, 71, 71, 0.507);
+//   .fas {
+//     color: rgb(255, 38, 0);
+//   }
+// }
+// .img-portfolio2 {
+//   background-color: rgba(121, 216, 77, 0.507);
+//   .fas {
+//     color: rgb(60, 255, 0);
+//   }
+// }
+// .img-portfolio3 {
+//   background-color: rgba(48, 70, 196, 0.507);
+//   .fas {
+//     color: rgb(0, 68, 255);
+//   }
+// }
 
 .link-container1 {
   background: center/cover no-repeat url("../images/journal.png");
@@ -67,14 +82,15 @@
 }
 .project-container {
   margin-block: 3rem;
-  filter: grayscale(100%);
   transition: 1s;
   @include a.min-md {
+    
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 200px 400px minmax(200px, 800px);
     grid-template-areas: "header image text";
     gap: 2rem;
+    filter: grayscale(100%);
 
     &:hover .link-container {
       width: 400px;
@@ -83,10 +99,17 @@
       width: 400px;
       height: 200px;
     }
+    &:hover {
+      filter: grayscale(0);
+    }
+    a {
+      transition:.5s;
+      &:hover:not(.button) {
+        transform: scale(1.5);
+      }
+    }
   }
-  &:hover {
-    filter: grayscale(0);
-  }
+ 
 
   img {
     width: 100%;
@@ -102,9 +125,11 @@
 
     @include a.max-md {
       padding-block: 2rem;
+      
     }
     @include a.min-md {
       padding: 0;
+      
     }
     span {
       font-size: small;
@@ -120,11 +145,6 @@
       }
     }
   }
-  a {
-    transition:.5s;
-    &:hover:not(.button) {
-      transform: scale(1.5);
-    }
-  }
+
 
   
