@@ -131,10 +131,6 @@ header {
   background-color: black;
   color: white;
 }
-header:hover .h1-container > .h1-horizontal > div > span {
-  color: white;
-  transition: 3s;
-}
 
 .h1-container {
   top: 0;
@@ -177,9 +173,6 @@ header:hover .h1-container > .h1-horizontal > div > span {
   animation: tb-max 4s forwards;
 }
 @media (max-width: 35em) {
-  .h1-container .h1-horizontal {
-    color: white;
-  }
   .h1-container .h1-horizontal .first-name {
     position: relative;
   }
@@ -208,14 +201,13 @@ header:hover .h1-container > .h1-horizontal > div > span {
 }
 .h1-container .h1-horizontal span {
   font-size: 0.5em;
-  color: white;
   transition: 1s ease-out;
 }
 .h1-container .sub-header {
   bottom: 30px;
   font-size: 0rem;
   font-weight: 600;
-  animation: rise 4s ease-in-out 4s forwards;
+  animation: rise 4s ease-in-out 1s forwards;
 }
 
 @keyframes rise {
