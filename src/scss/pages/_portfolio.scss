@@ -41,6 +41,7 @@
 
 .portfolio {
   .link-container {
+    overflow:hidden;
     border: 1px solid white;
     transition: 2s;
     grid-area: "image";
@@ -51,7 +52,39 @@
   .icon-container {
     padding-top: 6rem;
   }
+  .img-portfolio{
+    width:1px;
+    aspect-ratio: 1;
+    clip-path: circle(50% at 50% 50%);
+    transition:2s;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+  }
 }
+.img-portfolio1{
+  background-color: rgba(190, 71, 71, 0.507);
+  .fas{
+    color:rgb(255, 38, 0);
+
+  }
+}
+.img-portfolio2{
+  background-color: rgba(121, 216, 77, 0.507);
+  .fas{
+    color:rgb(60, 255, 0);
+
+  }
+}
+.img-portfolio3{
+  background-color: rgba(48, 70, 196, 0.507);
+  .fas{
+    color:rgb(0, 68, 255);
+
+  }
+}
+
 .link-container1 {
   background: center/cover no-repeat url("../images/journal.png");
 }
@@ -79,8 +112,12 @@
     grid-template-areas: "header image text";
     gap: 2rem;
 
-    &:hover .link-container {
+    &:hover .link-container  {
       width: 400px;
+    }
+    &:hover .img-portfolio{
+      width:400px;
+      height:200px;
     }
   }
   &:hover {
@@ -94,11 +131,22 @@
   .project-header {
     font-size: 1.5rem;
     grid-area: "header";
+    @include a.min-md {
+      width:1px;
+      height:200px;
+      
+    }
+  
     @include a.max-md {
       padding-block: 2rem;
     }
     @include a.min-md {
       padding: 0;
+    }
+    span{
+      font-size:small;
+      display:block;
+      padding-top:1rem;
     }
   }
   .text-container{
