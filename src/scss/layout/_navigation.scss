@@ -11,12 +11,12 @@
     width: 3.5rem;
     aspect-ratio: 1;
     margin: 2rem;
-    background-color: a.$clr-main;
+    background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
     color: black;
     @include a.center-content;
     p {
       font-family: a.$ff-head;
-      padding: .5rem;
+      padding: 0.5rem;
       border-left: 2px solid black;
       border-right: 2px solid black;
     }
@@ -54,11 +54,10 @@
     text-transform: uppercase;
     padding-block: 1rem;
     border: 1px solid transparent;
-    
 
-      &:hover {
-        border-bottom: 1px solid a.$clr-main;
-        border-top: 1px solid a.$clr-main;
+    &:hover {
+      border-bottom: 1px solid a.$clr-light;
+      border-top: 1px solid a.$clr-light;
     }
   }
   a {
@@ -88,7 +87,7 @@
   }
   @include a.min-sm {
     //only top and bottom
-    padding-block: .5rem;
+    padding-block: 0.5rem;
     //smallest 3rem middle growth factor and last max padding
     padding-inline: clamp(3rem, 10vw, 10rem);
     gap: clamp(1.5rem, 5vw, 3rem);

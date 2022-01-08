@@ -1,6 +1,6 @@
 @use "../abstracts/" as a;
 footer{
-    background-color: a.$clr-main;
+    background-color: a.$clr-light;
 }
 .footer{
     padding:1rem;

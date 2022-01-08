@@ -44,24 +44,6 @@
 }
 }
 
-// .img-portfolio1 {
-//   background-color: rgba(190, 71, 71, 0.507);
-//   .fas {
-//     color: rgb(255, 38, 0);
-//   }
-// }
-// .img-portfolio2 {
-//   background-color: rgba(121, 216, 77, 0.507);
-//   .fas {
-//     color: rgb(60, 255, 0);
-//   }
-// }
-// .img-portfolio3 {
-//   background-color: rgba(48, 70, 196, 0.507);
-//   .fas {
-//     color: rgb(0, 68, 255);
-//   }
-// }
 
 .link-container1 {
   background: center/cover no-repeat url("../images/journal.png");
@@ -135,6 +117,16 @@
       font-size: small;
       display: block;
       padding-top: 1rem;
+    }
+    .icon-container{
+      display:none;
+      width:4rem;
+    margin-left:8rem;
+      transform:rotate(-90deg);
+      @include a.min-md {
+       display:block;
+        
+      }
     }
   }
 

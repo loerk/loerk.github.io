@@ -118,7 +118,7 @@ a {
 }
 
 .fa-g {
-  color: #71fc21;
+  color: #cca01d;
 }
 
 .text-center {
@@ -168,7 +168,9 @@ header {
   writing-mode: vertical-rl;
   text-orientation: upright;
   animation: tb-max 4s forwards;
-  color: #71fc21;
+  background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .h1-container .h1-horizontal .last-name > span::before {
   content: "tack";
@@ -177,7 +179,9 @@ header {
   writing-mode: vertical-rl;
   text-orientation: upright;
   animation: tb-max 4s forwards;
-  color: #71fc21;
+  background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 35em) {
   .h1-container .h1-horizontal .first-name {
@@ -195,7 +199,9 @@ header {
     writing-mode: vertical-rl;
     text-orientation: upright;
     animation: tb-min 4s forwards;
-    color: #cca01d;
+    background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .h1-container .h1-horizontal .last-name > span::before {
     content: "tack";
@@ -205,7 +211,9 @@ header {
     writing-mode: vertical-rl;
     text-orientation: upright;
     animation: tb-min 4s forwards;
-    color: #cca01d;
+    background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 .h1-container .h1-horizontal span {
@@ -218,6 +226,7 @@ header {
   letter-spacing: clamp(1rem, 5vw, 1.5rem);
   font-size: 0rem;
   font-weight: 600;
+  color: white;
   animation: rise 4s ease-in-out 1s forwards;
 }
 @media (min-width: 55em) {
@@ -263,7 +272,7 @@ header {
   width: 3.5rem;
   aspect-ratio: 1;
   margin: 2rem;
-  background-color: #71fc21;
+  background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
   color: black;
   display: flex;
   align-items: center;
@@ -310,8 +319,8 @@ header {
   border: 1px solid transparent;
 }
 .primary-navigation li:hover {
-  border-bottom: 1px solid #71fc21;
-  border-top: 1px solid #71fc21;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
 }
 .primary-navigation a {
   color: white;
@@ -451,10 +460,10 @@ section .flex-container {
   width: 200px;
   aspect-ratio: 1;
   filter: grayscale(100%);
+  transition: 2s;
 }
 .img-container:hover {
   filter: grayscale(0);
-  transition: 1s;
 }
 @media (min-width: 35em) {
   .img-container {
@@ -468,7 +477,6 @@ section .flex-container {
   aspect-ratio: 1;
   border: 5px solid black;
   object-fit: cover;
-  transition: 0.3s;
 }
 .img-container p {
   text-align: center;
@@ -489,15 +497,15 @@ section .flex-container {
 }
 .stack .flex-container {
   max-width: 300px;
-  border-left: 2px solid #71fc21;
-  border-right: 2px solid #71fc21;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 .stack .img-container {
   position: relative;
   width: 200px;
   height: 100px;
-  border-left: 2px solid #71fc21;
-  border-right: 2px solid #71fc21;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   transition: 1s ease;
   margin-block: 1rem;
 }
@@ -513,7 +521,7 @@ section .flex-container {
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
-  border: 1px solid #71fc21;
+  border: 1px solid #cca01d;
   transition: 2s;
   grid-area: "image";
 }
@@ -540,7 +548,7 @@ section .flex-container {
 }
 
 .img-portfolio {
-  background-color: rgba(113, 252, 33, 0.534);
+  background-color: rgba(204, 160, 29, 0.63);
 }
 .img-portfolio .fas {
   color: black;
@@ -629,6 +637,17 @@ section .flex-container {
   display: block;
   padding-top: 1rem;
 }
+.project-container .project-header .icon-container {
+  display: none;
+  width: 4rem;
+  margin-left: 8rem;
+  transform: rotate(-90deg);
+}
+@media (min-width: 55em) {
+  .project-container .project-header .icon-container {
+    display: block;
+  }
+}
 .project-container .text-container {
   padding-top: 3rem;
 }
@@ -683,10 +702,10 @@ form textarea {
   transition: 0.5s;
 }
 .button:hover {
-  background-color: rgba(113, 252, 33, 0.534);
-  color: white;
-  border-left: 2px solid rgba(113, 252, 33, 0.534);
-  border-right: 2px solid rgba(113, 252, 33, 0.534);
+  background-color: white;
+  color: black;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
 ::-webkit-scrollbar {
@@ -698,7 +717,7 @@ form textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #71fc21;
+  background: linear-gradient(to top, #BF953F, #FCF6BA, #B38728);
 }
 
 .mobile-nav-toggle {
@@ -706,7 +725,7 @@ form textarea {
 }
 
 footer {
-  background-color: #71fc21;
+  background-color: white;
 }
 
 .footer {

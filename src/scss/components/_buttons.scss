@@ -17,10 +17,10 @@
   transition:.5s;
   
   &:hover{
-    background-color: a.$clr-main-light;
-    color:white;
-    border-left: 2px solid  a.$clr-main-light;
-    border-right: 2px solid  a.$clr-main-light;
+    background-color: a.$clr-light;
+    color:a.$clr-dark;
+    border-left: 2px solid  a.$clr-light;
+    border-right: 2px solid  a.$clr-light;
    
 }
 }
@@ -32,7 +32,8 @@
   background: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar-thumb {
-  background: a.$clr-main;
+  background: linear-gradient(to top, #BF953F, #FCF6BA, #B38728);
+
 }
 .mobile-nav-toggle{
   cursor: pointer;

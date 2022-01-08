@@ -6,10 +6,12 @@
       width: 200px;
       aspect-ratio: 1;
       filter: grayscale(100%);
+      transition: 2s;
 
       &:hover {
         filter: grayscale(0);
-        transition: 1s;
+        
+        
       }
       @include a.min-sm {
         width: 400px;
@@ -21,7 +23,7 @@
         aspect-ratio: 1;
         border: 5px solid black;
         object-fit: cover;
-        transition: 0.3s;
+       
       }
       p {
         text-align: center;
