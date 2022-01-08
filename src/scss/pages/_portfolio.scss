@@ -13,7 +13,6 @@
       width: 0px;
     }
   }
-
 }
 .img-portfolio {
   width: 100%;
@@ -30,20 +29,19 @@
 }
 
 .img-portfolio {
-  background-color:  a.$clr-main-light;
+  background-color: a.$clr-main-light;
   .fas {
     color: black;
   }
   @include a.min-sm {
-  a {
-    transition:.5s;
-    &:hover:not(.button) {
-      transform: scale(1.5);
+    a {
+      transition: 0.5s;
+      &:hover:not(.button) {
+        transform: scale(1.5);
+      }
     }
   }
 }
-}
-
 
 .link-container1 {
   background: center/cover no-repeat url("../images/journal.png");
@@ -60,13 +58,11 @@
 .work-container {
   width: 80%;
   margin: 0 auto;
-
 }
 .project-container {
   margin-block: 3rem;
   transition: 1s;
   @include a.min-md {
-    
     margin-top: 4rem;
     display: grid;
     grid-template-columns: 200px 400px minmax(200px, 800px);
@@ -85,13 +81,12 @@
       filter: grayscale(0);
     }
     a {
-      transition:.5s;
+      transition: 0.5s;
       &:hover:not(.button) {
         transform: scale(1.5);
       }
     }
   }
- 
 
   img {
     width: 100%;
@@ -107,36 +102,30 @@
 
     @include a.max-md {
       padding-block: 2rem;
-      
     }
     @include a.min-md {
       padding: 0;
-      
     }
     span {
       font-size: small;
       display: block;
       padding-top: 1rem;
     }
-    .icon-container{
-      display:none;
-      width:4rem;
-    margin-left:8rem;
-      transform:rotate(-90deg);
+    .icon-container {
+      display: none;
+      width: 4rem;
+      margin-left: 8rem;
+      transform: rotate(-90deg);
       @include a.min-md {
-       display:block;
-        
+        display: block;
       }
     }
   }
 
-    .text-container {
-      padding-top: 3rem;
-      @include a.min-md {
-        padding-top: 0;
-      }
+  .text-container {
+    padding-top: 3rem;
+    @include a.min-md {
+      padding-top: 0;
     }
   }
-
-
-  
+}

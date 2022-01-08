@@ -515,15 +515,18 @@ section .flex-container {
   position: relative;
   width: 200px;
   height: 100px;
+  color: white;
   border-left: 2px solid white;
   border-right: 2px solid white;
   transition: 1s ease;
+  filter: grayscale(0);
   margin-block: 1rem;
 }
 .stack .img-container p {
   position: sticky;
   top: 55%;
   z-index: -1;
+  padding: 1rem;
 }
 
 .portfolio .link-container {

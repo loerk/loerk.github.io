@@ -11,6 +11,7 @@
   }
   .flex-container{
     max-width:300px;
+    // background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
     border-left: 2px solid a.$clr-light;
     border-right: 2px solid a.$clr-light;
     padding-block:3rem;
@@ -20,13 +21,17 @@
     position: relative;
     width: 200px;
     height:100px;
+    color:a.$clr-light;
     border-left: 2px solid a.$clr-light;
     border-right: 2px solid a.$clr-light;
     transition: 1s ease;
+    filter:grayscale(0);
+    
     p {
       position: sticky;
       top: 55%;
       z-index: -1;
+      padding:1rem;
     }
     
     margin-block: 1rem;
