@@ -376,13 +376,18 @@ body {
 }
 
 section {
+  position: relative;
   background-color: black;
   color: white;
   width: 100%;
   min-height: 100vh;
-  padding-block: 10rem;
+  padding-top: 10rem;
 }
 section .section-header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   margin: 0 auto;
   width: 80%;
   border-top: 1px solid white;
@@ -392,10 +397,15 @@ section .section-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem;
+  padding: 3rem;
   font-size: 1.5rem;
   font-weight: lighter;
   letter-spacing: 0.2em;
+}
+@media (min-width: 35em) {
+  section .section-header {
+    position: relative;
+  }
 }
 section .flex-container {
   margin: 0 auto;
@@ -489,8 +499,8 @@ section .flex-container {
 }
 
 .stack .sub-header {
+  width: 100%;
   border: none;
-  line-height: 1.5;
   margin-top: 4rem;
   font-size: 1.5rem;
   font-weight: lighter;
@@ -499,6 +509,7 @@ section .flex-container {
   max-width: 300px;
   border-left: 2px solid white;
   border-right: 2px solid white;
+  padding-block: 3rem;
 }
 .stack .img-container {
   position: relative;
@@ -511,7 +522,6 @@ section .flex-container {
 }
 .stack .img-container p {
   position: sticky;
-  left: 20%;
   top: 55%;
   z-index: -1;
 }
@@ -576,7 +586,7 @@ section .flex-container {
 
 .work-container {
   width: 80%;
-  margin: 8rem auto;
+  margin: 0 auto;
 }
 
 .project-container {
@@ -660,7 +670,7 @@ section .flex-container {
 form {
   width: 60%;
   margin: 0 auto;
-  padding-top: 10em;
+  padding-block: 10em;
 }
 form input {
   font-family: "NeutralFace", sans-serif;
@@ -695,7 +705,7 @@ form textarea {
   font-size: 0.9rem;
   width: 100%;
   padding: 1rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
   text-align: center;
   font-family: "NeutralFace", sans-serif;
   letter-spacing: 0.5rem;

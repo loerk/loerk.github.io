@@ -7,12 +7,17 @@ body{
     overflow-x: hidden;
 }
 section{
+    position:relative;
     background-color: black;
     color:white;
     width:100%;
     min-height:100vh;
-    padding-block:10rem;
+    padding-top:10rem;
     .section-header{
+        background-color: a.$clr-dark;
+        position:sticky;
+        top:0;
+        z-index:100;
         margin:0 auto;
         width:80%;
         border-top:1px solid white;
@@ -20,10 +25,13 @@ section{
         font-family: a.$ff-head;
         text-align:center;
         @include a.center-content;
-        padding:4rem;
+        padding:3rem;
         font-size: 1.5rem;
         font-weight:lighter;
         letter-spacing: .2em;
+        @include a.min-sm {
+            position:relative;
+        }
         
     }
     .flex-container{

@@ -2,16 +2,18 @@
 
 .stack {
   .sub-header {
+    width:100%;
     border: none;
-    line-height: 1.5;
     margin-top: 4rem;
     font-size: 1.5rem;
     font-weight: lighter;
+    
   }
   .flex-container{
     max-width:300px;
     border-left: 2px solid a.$clr-light;
     border-right: 2px solid a.$clr-light;
+    padding-block:3rem;
   }
 
   .img-container {
@@ -23,7 +25,6 @@
     transition: 1s ease;
     p {
       position: sticky;
-      left: 20%;
       top: 55%;
       z-index: -1;
     }
