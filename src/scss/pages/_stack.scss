@@ -9,7 +9,7 @@
     font-weight: lighter;
   }
   .flex-container{
-    width:300px;
+    max-width:300px;
     border-left: 2px solid a.$clr-main;
     border-right: 2px solid a.$clr-main;
   }

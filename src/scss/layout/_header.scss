@@ -82,7 +82,7 @@ header {
   .sub-header {
     position:relative;
     top: 300px;
-    letter-spacing: 1.5rem;
+    letter-spacing: clamp(1rem, 5vw, 1.5rem);
     font-size: 0rem;
     font-weight: 600;
     animation: rise 4s ease-in-out 1s forwards;

@@ -118,7 +118,7 @@ a {
 }
 
 .fa-g {
-  color: #cca01d;
+  color: #71fc21;
 }
 
 .text-center {
@@ -168,7 +168,7 @@ header {
   writing-mode: vertical-rl;
   text-orientation: upright;
   animation: tb-max 4s forwards;
-  color: #cca01d;
+  color: #71fc21;
 }
 .h1-container .h1-horizontal .last-name > span::before {
   content: "tack";
@@ -177,7 +177,7 @@ header {
   writing-mode: vertical-rl;
   text-orientation: upright;
   animation: tb-max 4s forwards;
-  color: #cca01d;
+  color: #71fc21;
 }
 @media (max-width: 35em) {
   .h1-container .h1-horizontal .first-name {
@@ -215,7 +215,7 @@ header {
 .h1-container .sub-header {
   position: relative;
   top: 300px;
-  letter-spacing: 1.5rem;
+  letter-spacing: clamp(1rem, 5vw, 1.5rem);
   font-size: 0rem;
   font-weight: 600;
   animation: rise 4s ease-in-out 1s forwards;
@@ -263,7 +263,7 @@ header {
   width: 3.5rem;
   aspect-ratio: 1;
   margin: 2rem;
-  background-color: #cca01d;
+  background-color: #71fc21;
   color: black;
   display: flex;
   align-items: center;
@@ -310,8 +310,8 @@ header {
   border: 1px solid transparent;
 }
 .primary-navigation li:hover {
-  border-bottom: 1px solid #cca01d;
-  border-top: 1px solid #cca01d;
+  border-bottom: 1px solid #71fc21;
+  border-top: 1px solid #71fc21;
 }
 .primary-navigation a {
   color: white;
@@ -488,16 +488,16 @@ section .flex-container {
   font-weight: lighter;
 }
 .stack .flex-container {
-  width: 300px;
-  border-left: 2px solid #cca01d;
-  border-right: 2px solid #cca01d;
+  max-width: 300px;
+  border-left: 2px solid #71fc21;
+  border-right: 2px solid #71fc21;
 }
 .stack .img-container {
   position: relative;
   width: 200px;
   height: 100px;
-  border-left: 2px solid #cca01d;
-  border-right: 2px solid #cca01d;
+  border-left: 2px solid #71fc21;
+  border-right: 2px solid #71fc21;
   transition: 1s ease;
   margin-block: 1rem;
 }
@@ -513,7 +513,7 @@ section .flex-container {
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
-  border: 1px solid #cca01d;
+  border: 1px solid #71fc21;
   transition: 2s;
   grid-area: "image";
 }
@@ -540,7 +540,7 @@ section .flex-container {
 }
 
 .img-portfolio {
-  background-color: rgba(204, 160, 29, 0.63);
+  background-color: rgba(113, 252, 33, 0.534);
 }
 .img-portfolio .fas {
   color: black;
@@ -683,10 +683,10 @@ form textarea {
   transition: 0.5s;
 }
 .button:hover {
-  background-color: rgba(204, 160, 29, 0.63);
+  background-color: rgba(113, 252, 33, 0.534);
   color: white;
-  border-left: 2px solid rgba(204, 160, 29, 0.63);
-  border-right: 2px solid rgba(204, 160, 29, 0.63);
+  border-left: 2px solid rgba(113, 252, 33, 0.534);
+  border-right: 2px solid rgba(113, 252, 33, 0.534);
 }
 
 ::-webkit-scrollbar {
@@ -698,7 +698,7 @@ form textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cca01d;
+  background: #71fc21;
 }
 
 .mobile-nav-toggle {
@@ -706,7 +706,7 @@ form textarea {
 }
 
 footer {
-  background-color: #cca01d;
+  background-color: #71fc21;
 }
 
 .footer {
