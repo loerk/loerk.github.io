@@ -1,6 +1,6 @@
 @use "../abstracts/" as a;
 footer{
-    background-color: a.$clr-light;
+    background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
 }
 .footer{
     padding:1rem;

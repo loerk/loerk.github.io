@@ -13,6 +13,16 @@
       width: 0px;
     }
   }
+  .text-container {
+    padding-block: 6rem;
+    grid-area: "text";
+    @include a.min-md {
+      padding-top: 0;
+    }
+    @include a.max-md {
+      padding-block: 2rem;
+    }
+  }
 }
 .img-portfolio {
   width: 100%;
