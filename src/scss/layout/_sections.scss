@@ -20,8 +20,11 @@ section{
         z-index:100;
         margin:0 auto;
         width:80%;
-        border-top:1px solid white;
-        border-bottom:1px solid white;
+        border-top: 5px solid;
+        border-bottom: 5px solid;
+        border-image-slice: 1;
+        border-width: 1px;
+        border-image-source:-webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
         font-family: a.$ff-head;
         text-align:center;
         @include a.center-content;

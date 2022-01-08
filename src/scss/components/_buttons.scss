@@ -14,12 +14,15 @@
   text-align:center;
   font-family:a.$ff-head;
   letter-spacing: .5rem;
-  transition:.5s;
-  
+  transition:1s;
+  @include a.min-md {
+    width:30%;
+    margin:5rem auto 0 auto;
+
+  }
   
   &:hover{
     background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
-
     color:a.$clr-dark;
     border-left: 2px solid  a.$clr-light;
     border-right: 2px solid  a.$clr-light;

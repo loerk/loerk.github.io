@@ -39,7 +39,7 @@
 }
 
 .img-portfolio {
-  background-color: a.$clr-main-light;
+  background: -webkit-linear-gradient( #bf943f88, #fcf6ba83,  #aa761c86);
   .fas {
     color: black;
   }
@@ -91,12 +91,7 @@
     &:hover {
       filter: grayscale(0);
     }
-    a {
-      transition: 0.5s;
-      &:hover:not(.button) {
-        transform: scale(1.5);
-      }
-    }
+    
   }
 
   img {
@@ -138,5 +133,12 @@
     @include a.min-md {
       padding-top: 0;
     }
+  }
+}
+
+a {
+  transition: 0.5s;
+  &:hover:not(.button) {
+    transform: scale(1.5);
   }
 }
