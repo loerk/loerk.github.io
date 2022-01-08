@@ -18,7 +18,8 @@
   
   
   &:hover{
-    background-color: a.$clr-light;
+    background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
+
     color:a.$clr-dark;
     border-left: 2px solid  a.$clr-light;
     border-right: 2px solid  a.$clr-light;
