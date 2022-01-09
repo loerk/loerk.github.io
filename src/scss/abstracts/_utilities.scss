@@ -49,3 +49,19 @@ color:white;
 .bold{
   font-weight:600;
 }
+
+.center{
+  width:50%;
+  margin:0 auto;
+  display:flex;
+  justify-content: center;
+}
+
+.txt-g{
+  background: -webkit-linear-gradient( #BF953F, #FCF6BA, #FBF5B7, #AA771C);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.txt-right{
+  text-align:right;
+}

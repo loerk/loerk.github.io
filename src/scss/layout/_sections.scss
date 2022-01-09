@@ -31,19 +31,20 @@ section {
     border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
     font-family: a.$ff-head;
     text-align: center;
+    i{
+        cursor: pointer;
+        position:relative;
+        left:2rem;
+        bottom:1rem;
+        font-size:1rem;
+       padding-bottom:.2rem;
+     }
     @include a.center-content;
     padding: 3rem;
     font-size: 1.5rem;
     font-weight: lighter;
     letter-spacing: 0.2em;
-     i{
-         cursor: pointer;
-         position:absolute;
-         right:2rem;
-         top:1rem;
-         font-size:1rem;
-        padding-bottom:.2rem;
-      }
+     
     @include a.min-sm {
       position: relative;
     }

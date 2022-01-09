@@ -4,6 +4,21 @@
   padding-top: 3rem;
     text-align: justify;
     line-height:1.5;
+    letter-spacing:.2rem;
+    span{
+      padding-bottom:.2rem;
+      border-bottom:5px solid transparent;
+      @include a.min-sm{
+      
+      &:hover{
+        border-bottom: 5px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
+      }
+    }
+     
+    }
     @include a.max-sm{
       text-align:start;
     }
@@ -35,4 +50,6 @@ padding:1rem;
     border:2px solid white;
   }
 
+.img-container{
 
+}
