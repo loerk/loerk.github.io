@@ -278,7 +278,7 @@ header {
   width: 3.5rem;
   aspect-ratio: 1;
   margin: 2rem;
-  background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
+  background: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
   color: black;
   display: flex;
   align-items: center;
@@ -299,18 +299,34 @@ header {
 @media (max-width: 35em) {
   .nav-container .mobile-nav-toggle {
     display: block;
-    position: absolute;
-    z-index: 9999;
-    background: no-repeat url("../images/hamburger-open.png");
-    width: 2rem;
-    aspect-ratio: 1;
-    border: 0;
-    top: 2rem;
-    right: 2rem;
   }
 }
-.nav-container .mobile-nav-toggle[aria-expanded=true] {
-  background: no-repeat url("../images/hamburger-close.svg");
+.nav-container .menu-icon {
+  cursor: pointer;
+  z-index: 9999;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  padding: 1.2rem;
+}
+.nav-container .menu-icon .line {
+  width: 2rem;
+  height: 2px;
+  margin: 5px 0;
+  background: -webkit-linear-gradient(#bf953f, #fcf6ba);
+}
+.nav-container .menu-icon .line2 {
+  opacity: 0;
+}
+.nav-container .mobile-nav-toggle[aria-expanded=true] .line1 {
+  transform: rotate(-45deg);
+}
+.nav-container .mobile-nav-toggle[aria-expanded=true] .line2 {
+  opacity: 0;
+}
+.nav-container .mobile-nav-toggle[aria-expanded=true] .line3 {
+  transform: rotate(45deg);
+  margin-left: 0px;
 }
 
 .primary-navigation {
@@ -335,7 +351,7 @@ header {
   letter-spacing: 0.2rem;
 }
 .primary-navigation a span {
-  background: -webkit-linear-gradient(#BF953F, #FCF6BA);
+  background: -webkit-linear-gradient(#bf953f, #fcf6ba);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -393,6 +409,7 @@ section {
   width: 100%;
   min-height: 100vh;
   padding-top: 10rem;
+  padding-bottom: 3rem;
 }
 section .section-header {
   background-color: black;
@@ -542,6 +559,9 @@ section .flex-container {
   padding: 1rem;
 }
 
+.portfolio {
+  padding-bottom: 5rem;
+}
 .portfolio .link-container {
   display: flex;
   justify-content: center;
@@ -691,7 +711,30 @@ a:hover:not(.button) {
   transform: scale(1.5);
 }
 
-@keyframes updown {}
+.moving-arrow {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-45deg);
+  padding-block: 2rem;
+  width: 20px;
+  aspect-ratio: 1;
+  border-left: 10px solid;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
+  margin: 0 auto;
+  animation: updown 2s infinite 2s;
+}
+
+@keyframes updown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 4rem;
+  }
+}
 form {
   width: 60%;
   margin: 0 auto;

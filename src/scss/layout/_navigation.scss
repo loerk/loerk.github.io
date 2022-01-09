@@ -11,7 +11,7 @@
     width: 3.5rem;
     aspect-ratio: 1;
     margin: 2rem;
-    background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
+    background: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
     color: black;
     @include a.center-content;
     p {
@@ -29,18 +29,36 @@
     }
     @include a.max-sm {
       display: block;
-      position: absolute;
-      z-index: 9999;
-      background: no-repeat url("../images/hamburger-open.png");
+    }
+  }
+  .menu-icon {
+    cursor: pointer;
+    z-index: 9999;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    padding: 1.2rem;
+    .line {
       width: 2rem;
-      aspect-ratio: 1;
-      border: 0;
-      top: 2rem;
-      right: 2rem;
+      height: 2px;
+      margin: 5px 0;
+      background: -webkit-linear-gradient(#bf953f, #fcf6ba);
+    }
+    .line2{
+      opacity:0;
     }
   }
   .mobile-nav-toggle[aria-expanded="true"] {
-    background: no-repeat url("../images/hamburger-close.svg");
+    .line1 {
+      transform: rotate(-45deg);
+    }
+    .line2 {
+      opacity: 0;
+    }
+    .line3 {
+      transform: rotate(45deg) ;
+      margin-left: 0px;
+    }
   }
 }
 
@@ -57,8 +75,7 @@
 
     &:hover {
       border-top: 1px solid a.$clr-light;
-        border-bottom: 1px solid a.$clr-light;
-       
+      border-bottom: 1px solid a.$clr-light;
     }
   }
   a {
@@ -66,10 +83,11 @@
     font-family: a.$ff-head;
     font-weight: 700;
     letter-spacing: 0.2rem;
-    span{
-      background: -webkit-linear-gradient( #BF953F, #FCF6BA);
+    span {
+      background: -webkit-linear-gradient(#bf953f, #fcf6ba);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;    }
+      -webkit-text-fill-color: transparent;
+    }
   }
   a > [aria-hidden="true"] {
     font-family: a.$ff-head, sans-serif;

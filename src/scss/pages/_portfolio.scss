@@ -1,6 +1,7 @@
 @use "../abstracts/" as a;
 
 .portfolio {
+  padding-bottom:5rem;
   .link-container {
     display: flex;
     justify-content: center;
@@ -39,11 +40,10 @@
 }
 
 .img-portfolio {
-  background: -webkit-linear-gradient( #bf943f88, #fcf6ba83,  #aa761c86);
+  background: -webkit-linear-gradient(#bf943f88, #fcf6ba83, #aa761c86);
   .fas {
     color: black;
   }
- 
 }
 
 .link-container1 {
@@ -59,7 +59,7 @@
 }
 
 .work-container {
-  width:80%;
+  width: 80%;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -84,7 +84,6 @@
     &:hover {
       filter: grayscale(0);
     }
-    
   }
 
   img {
@@ -136,11 +135,28 @@ a {
   }
 }
 
+.moving-arrow {
+  overflow: hidden;
+  position: relative;
+  transform: rotate(-45deg);
+  padding-block: 2rem;
+  width: 20px;
+  aspect-ratio: 1;
+  border-left: 10px solid;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
+  margin: 0 auto;
+  animation: updown 2s infinite 2s;
+}
+
 @keyframes updown {
-  from {
-
+  0% {
+    top:0;
   }
-  to{
 
+  100% {
+    top:4rem;
   }
 }
