@@ -43,14 +43,7 @@
   .fas {
     color: black;
   }
-  @include a.min-sm {
-    a {
-      transition: 0.5s;
-      &:hover:not(.button) {
-        transform: scale(1.5);
-      }
-    }
-  }
+ 
 }
 
 .link-container1 {
@@ -140,5 +133,14 @@ a {
   transition: 0.5s;
   &:hover:not(.button) {
     transform: scale(1.5);
+  }
+}
+
+@keyframes updown {
+  from {
+
+  }
+  to{
+
   }
 }

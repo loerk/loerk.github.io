@@ -403,6 +403,8 @@ section .section-header {
   width: 80%;
   border-top: 5px solid;
   border-bottom: 5px solid;
+  border-right: none;
+  border-left: none;
   border-image-slice: 1;
   border-width: 1px;
   border-image-source: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
@@ -591,14 +593,6 @@ section .flex-container {
 .img-portfolio .fas {
   color: black;
 }
-@media (min-width: 35em) {
-  .img-portfolio a {
-    transition: 0.5s;
-  }
-  .img-portfolio a:hover:not(.button) {
-    transform: scale(1.5);
-  }
-}
 
 .link-container1 {
   background: center/cover no-repeat url("../images/journal.png");
@@ -697,6 +691,7 @@ a:hover:not(.button) {
   transform: scale(1.5);
 }
 
+@keyframes updown {}
 form {
   width: 60%;
   margin: 0 auto;
