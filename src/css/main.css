@@ -429,7 +429,6 @@ section {
   padding-bottom: 3rem;
 }
 section .section-header {
-  width: 2000px;
   background-color: black;
   position: sticky;
   top: 0;
@@ -464,6 +463,11 @@ section .section-header i {
 @media (min-width: 35em) {
   section .section-header {
     position: relative;
+  }
+}
+@media (max-width: 35em) {
+  section .section-header {
+    width: 100%;
   }
 }
 section .flex-container {

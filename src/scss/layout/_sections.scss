@@ -15,7 +15,6 @@ section {
   padding-top: 10rem;
   padding-bottom: 3rem;
   .section-header {
-      width:2000px;
     background-color: a.$clr-dark;
     position: sticky;
     top: 0;
@@ -47,6 +46,9 @@ section {
      
     @include a.min-sm {
       position: relative;
+    }
+    @include a.max-sm{
+        width:100%;
     }
   }
   .flex-container {
