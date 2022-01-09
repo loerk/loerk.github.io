@@ -424,7 +424,7 @@ section .section-header {
   border-left: none;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
+  border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
   font-family: "NeutralFace", sans-serif;
   text-align: center;
   display: flex;
@@ -712,10 +712,9 @@ a:hover:not(.button) {
 }
 
 .moving-arrow {
-  overflow: hidden;
   position: relative;
   transform: rotate(-45deg);
-  padding-block: 2rem;
+  padding: 2rem;
   width: 20px;
   aspect-ratio: 1;
   border-left: 10px solid;

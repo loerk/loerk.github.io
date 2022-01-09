@@ -1,51 +1,50 @@
 @use "../abstracts/" as a;
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-section{
-    position:relative;
-    background-color: black;
-    color:white;
-    width:100%;
-    min-height:100vh;
-    padding-top:10rem;
-    padding-bottom:3rem;
-    .section-header{
-        background-color: a.$clr-dark;
-        position:sticky;
-        top:0;
-        z-index:100;
-        margin:0 auto;
-        width:80%;
-        border-top: 5px solid;
-        border-bottom: 5px solid;
-        border-right:none;
-        border-left:none;
-        border-image-slice: 1;
-        border-width: 1px;
-        border-image-source:-webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
-        font-family: a.$ff-head;
-        text-align:center;
-        @include a.center-content;
-        padding:3rem;
-        font-size: 1.5rem;
-        font-weight:lighter;
-        letter-spacing: .2em;
-        @include a.min-sm {
-            position:relative;
-        }
-        
+section {
+  position: relative;
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  .section-header {
+    background-color: a.$clr-dark;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 0 auto;
+    width: 80%;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-right: none;
+    border-left: none;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
+    font-family: a.$ff-head;
+    text-align: center;
+    @include a.center-content;
+    padding: 3rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+    @include a.min-sm {
+      position: relative;
     }
-    .flex-container{
-        margin:0 auto;
-         max-width:1500px;
-         @include a.min-sm {
-             display:flex;
-             flex-flow:row wrap;
-         }
-     }
+  }
+  .flex-container {
+    margin: 0 auto;
+    max-width: 1500px;
+    @include a.min-sm {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
 }
