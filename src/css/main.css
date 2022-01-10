@@ -532,6 +532,10 @@ section .flex-container {
   border: 2px solid white;
 }
 
+.flex-container {
+  width: 80%;
+}
+
 .img-container {
   margin: 0 auto;
   width: 200px;
@@ -539,6 +543,11 @@ section .flex-container {
 }
 .img-container span {
   font-size: 0.5rem;
+}
+@media (min-width: 35em) {
+  .img-container {
+    width: 250px;
+  }
 }
 .img-container img {
   display: block;
@@ -552,7 +561,6 @@ section .flex-container {
 @media (min-width: 35em) {
   .img-container img {
     filter: grayscale(100%);
-    width: 300px;
   }
   .img-container img:hover {
     filter: grayscale(0);
@@ -579,6 +587,8 @@ section .flex-container {
   max-width: 300px;
   border-left: 5px solid;
   border-right: 5px solid;
+  border-top: none;
+  border-bottom: none;
   border-image-slice: 1;
   border-width: 1px;
   border-image-source: -webkit-linear-gradient(top, #bf953f, #fcf6ba);

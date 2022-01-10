@@ -1,45 +1,45 @@
 @use "../abstracts/" as a;
 
- 
-    .img-container {
-      margin: 0 auto;
-      width: 200px;
-      aspect-ratio: 1;
-      span{
-        font-size:.5rem;
-      }
-     
-     
-      
-      
-      img {
-        display: block;
-        margin-top: 2rem;
-        width: 100%;
-        aspect-ratio: 1;
-        border: 5px solid black;
-        object-fit: cover;
-        transition: .5s;
-        @include a.min-sm {
-          filter: grayscale(100%);
-          width: 300px;
-          &:hover {
-            filter: grayscale(0);
-          }
-        }
-       
-      }
-      p {
-        text-align: center;
-      }
-    }
-  
-  .about {
-    .text-container {
-      padding-block: 6rem;
-      width: 60%;
-      margin: 0 auto;
-    }
-    
+.flex-container {
+  width: 80%;
+}
+.img-container {
+  margin: 0 auto;
+  width: 200px;
+  aspect-ratio: 1;
+  span {
+    font-size: 0.5rem;
+  }
+  @include a.min-sm {
+    width: 250px;
   }
 
+  img {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    aspect-ratio: 1;
+    border: 5px solid black;
+    object-fit: cover;
+    transition: 0.5s;
+
+    @include a.min-sm {
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.about {
+  .text-container {
+    padding-block: 6rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
