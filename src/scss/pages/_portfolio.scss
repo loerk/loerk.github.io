@@ -140,6 +140,7 @@ a {
   transform: rotate(-45deg);
   padding: 2rem;
   width: 20px;
+  opacity:0;
   aspect-ratio: 1;
   border-left: 10px solid;
   border-bottom: 10px solid;
@@ -147,7 +148,7 @@ a {
   border-width: 2px;
   border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
   margin: 0 auto;
-  animation: updown 2s infinite 2s;
+  animation: updown 3s infinite 2s;
 }
 
 @keyframes updown {
@@ -157,5 +158,6 @@ a {
 
   100% {
     top:4rem;
+    opacity:1;
   }
 }

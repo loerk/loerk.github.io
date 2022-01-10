@@ -5,17 +5,13 @@
       margin: 0 auto;
       width: 200px;
       aspect-ratio: 1;
-      filter: grayscale(100%);
-      transition: 2s;
-
-      &:hover {
-        filter: grayscale(0);
-        
-        
+      span{
+        font-size:.5rem;
       }
-      @include a.min-sm {
-        width: 300px;
-      }
+     
+     
+      
+      
       img {
         display: block;
         margin-top: 2rem;
@@ -23,6 +19,14 @@
         aspect-ratio: 1;
         border: 5px solid black;
         object-fit: cover;
+        transition: .5s;
+        @include a.min-sm {
+          filter: grayscale(100%);
+          width: 300px;
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
        
       }
       p {
