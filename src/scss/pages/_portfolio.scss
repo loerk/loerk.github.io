@@ -139,6 +139,7 @@ a {
   position: relative;
   transform: rotate(-45deg);
   padding: 2rem;
+  top:2rem;
   width: 20px;
   opacity:0;
   aspect-ratio: 1;
@@ -148,7 +149,8 @@ a {
   border-width: 2px;
   border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
   margin: 0 auto;
-  animation: updown 3s infinite 2s;
+  animation: updown 2s ease-in-out infinite 2s;
+
 }
 
 @keyframes updown {
@@ -156,8 +158,9 @@ a {
     top:0;
   }
 
-  100% {
-    top:4rem;
+  80% {
     opacity:1;
+    top:4;
   }
+
 }
