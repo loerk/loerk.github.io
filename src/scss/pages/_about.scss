@@ -15,6 +15,7 @@
   }
 
   img {
+    position:relative;
     display: block;
     margin-top: 2rem;
     width: 100%;
@@ -22,13 +23,20 @@
     border: 5px solid black;
     object-fit: cover;
     transition: 0.5s;
-
+    filter: sepia(100%) hue-rotate(15deg) saturate(100%);
     @include a.min-sm {
-      filter: grayscale(100%);
+      // filter: grayscale(100%);
 
       &:hover {
-        filter: grayscale(0);
-      }
+filter:none;      }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      
     }
   }
   p {
