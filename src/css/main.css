@@ -528,7 +528,12 @@ section .flex-container {
 }
 
 .input-container {
-  border-bottom: 3px solid white;
+  border-bottom: 1px solid;
+  border-right: none;
+  border-left: none;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
 }
 
 .icon-container {
@@ -845,8 +850,13 @@ form textarea {
   background-color: transparent;
   color: white;
   font-weight: 600;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-top: none;
+  border-bottom: none;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
   font-size: 0.9rem;
   width: 100%;
   padding: 1rem;
@@ -854,7 +864,7 @@ form textarea {
   text-align: center;
   font-family: "NeutralFace", sans-serif;
   letter-spacing: 0.5rem;
-  transition: 1s;
+  transition: 0.5s;
 }
 @media (min-width: 55em) {
   .button {

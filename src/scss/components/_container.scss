@@ -35,8 +35,12 @@
 
 
 .input-container {
-  border-bottom: 3px solid rgb(255, 255, 255);
-}
+  border-bottom: 1px solid;
+  border-right: none;
+  border-left: none;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);}
 
 
 .icon-container{
