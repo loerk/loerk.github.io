@@ -110,17 +110,11 @@ a {
 }
 
 .fa-w {
-  color: white;
+  color: greenyellow;
 }
 
 .fa-b {
   color: black;
-}
-
-.fa-g {
-  background: -webkit-linear-gradient(#BF953F, #FCF6BA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .text-center {
@@ -142,14 +136,13 @@ a {
   justify-content: center;
 }
 
-.txt-g {
-  background: -webkit-linear-gradient(#BF953F, #FCF6BA, #FBF5B7, #AA771C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .txt-right {
   text-align: right;
+}
+
+p {
+  line-height: 2.4rem;
+  text-align: start;
 }
 
 header {
@@ -157,6 +150,31 @@ header {
   height: 100vh;
   background-color: black;
   color: white;
+}
+
+.circle {
+  position: fixed;
+  border: 1px solid greenyellow;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+}
+
+.arrow-up {
+  position: relative;
+  transform: rotate(135deg);
+  color: greenyellow;
+  width: 10px;
+  top: 18px;
+  aspect-ratio: 1;
+  border-left: 10px solid;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  margin: 0 auto;
 }
 
 .h1-container {
@@ -191,9 +209,6 @@ header {
   writing-mode: vertical-rl;
   text-orientation: upright;
   animation: tb-max 4s forwards;
-  background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .h1-container .h1-horizontal .last-name > span::before {
   content: "tack";
@@ -202,9 +217,6 @@ header {
   writing-mode: vertical-rl;
   text-orientation: upright;
   animation: tb-max 4s forwards;
-  background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 35em) {
   .h1-container .h1-horizontal .first-name {
@@ -222,9 +234,6 @@ header {
     writing-mode: vertical-rl;
     text-orientation: upright;
     animation: tb-min 4s forwards;
-    background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .h1-container .h1-horizontal .last-name > span::before {
     content: "tack";
@@ -234,9 +243,6 @@ header {
     writing-mode: vertical-rl;
     text-orientation: upright;
     animation: tb-min 4s forwards;
-    background: -webkit-linear-gradient(#BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 .h1-container .h1-horizontal span {
@@ -292,33 +298,24 @@ header {
   justify-content: space-between;
 }
 .nav-container .logo {
-  width: 3.2rem;
-  aspect-ratio: 1;
-  margin: 2rem;
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
-  color: white;
+  width: 3rem;
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.nav-container .logo .upside-down {
+  color: greenyellow;
+  position: absolute;
+  transform: rotate(180deg);
 }
 .nav-container .logo::after {
   content: "";
   width: 40px;
   height: 40px;
   position: absolute;
-  border: 1px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
-}
-.nav-container .logo p {
-  font-family: "NeutralFace", sans-serif;
-  padding: 0.5rem;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
 }
 .nav-container .mobile-nav-toggle {
   display: none;
@@ -343,7 +340,7 @@ header {
   width: 2rem;
   height: 2px;
   margin: 5px 0;
-  background: -webkit-linear-gradient(#bf953f, #fcf6ba);
+  background: greenyellow;
 }
 .nav-container .menu-icon .line2 {
   opacity: 0;
@@ -371,19 +368,14 @@ header {
   border: 1px solid transparent;
 }
 .primary-navigation li:hover {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid greenyellow;
+  border-bottom: 1px solid greenyellow;
 }
 .primary-navigation a {
   color: white;
   font-family: "NeutralFace", sans-serif;
   font-weight: 700;
   letter-spacing: 0.2rem;
-}
-.primary-navigation a span {
-  background: -webkit-linear-gradient(#bf953f, #fcf6ba);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .primary-navigation a > [aria-hidden=true] {
   font-family: "NeutralFace", sans-serif, sans-serif;
@@ -454,7 +446,6 @@ section .section-header {
   border-left: none;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
   font-family: "NeutralFace", sans-serif;
   text-align: center;
   display: flex;
@@ -509,7 +500,6 @@ section .flex-container {
     border-bottom: 5px solid;
     border-image-slice: 1;
     border-width: 5px;
-    border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
   }
 }
 @media (max-width: 35em) {
@@ -533,7 +523,6 @@ section .flex-container {
   border-left: none;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
 }
 
 .icon-container {
@@ -576,9 +565,11 @@ section .flex-container {
   border: 5px solid black;
   object-fit: cover;
   transition: 0.5s;
-  filter: sepia(100%) hue-rotate(15deg) saturate(100%);
 }
 @media (min-width: 35em) {
+  .img-container img {
+    filter: grayscale(100%);
+  }
   .img-container img:hover {
     filter: none;
   }
@@ -590,22 +581,32 @@ section .flex-container {
   left: 0;
   width: 100%;
 }
+.img-container .circle {
+  position: fixed;
+  border: 1px solid greenyellow;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
 .img-container p {
   text-align: center;
 }
 
 .about .text-container {
-  padding-block: 6rem;
-  width: 60%;
+  padding-top: 6rem;
+  width: 50%;
   margin: 0 auto;
 }
 
 .stack .sub-header {
   width: 100%;
   border: none;
-  margin-top: 4rem;
   font-size: 1.5rem;
   font-weight: lighter;
+}
+.stack h2 {
+  text-align: center;
 }
 .stack .flex-container {
   max-width: 300px;
@@ -615,7 +616,6 @@ section .flex-container {
   border-bottom: none;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: -webkit-linear-gradient(top, #bf953f, #fcf6ba);
   padding-block: 3rem;
 }
 .stack .img-container {
@@ -627,16 +627,27 @@ section .flex-container {
   border-right: 5px solid;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: -webkit-linear-gradient(top, #bf953f, #fcf6ba);
   transition: 1s ease;
   filter: grayscale(0);
   margin-block: 1rem;
 }
 .stack .img-container p {
+  text-align: left;
+  background-color: #acff2f;
   position: sticky;
   top: 55%;
   z-index: -1;
   padding: 1rem;
+  color: black;
+}
+.stack .img-container #bootstrap {
+  width: 80%;
+}
+.stack .img-container #react {
+  width: 90%;
+}
+.stack .img-container #scss {
+  width: 80%;
 }
 
 .portfolio {
@@ -647,7 +658,7 @@ section .flex-container {
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
-  border: 1px solid #cca01d;
+  border: 1px solid greenyellow;
   transition: 2s;
   grid-area: "image";
 }
@@ -688,7 +699,7 @@ section .flex-container {
 }
 
 .img-portfolio {
-  background: -webkit-linear-gradient(#bf943f88, #fcf6ba83, #aa761c86);
+  background: rgba(172, 255, 47, 0.637);
 }
 .img-portfolio .fas {
   color: black;
@@ -803,7 +814,6 @@ a:hover:not(.button) {
   border-bottom: 10px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
   margin: 0 auto;
   animation: updown 2s ease-in-out infinite 2s;
 }
@@ -818,7 +828,7 @@ a:hover:not(.button) {
   }
 }
 form {
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
   padding-block: 10em;
 }
@@ -828,7 +838,7 @@ form input {
   margin-top: 1.5em;
   padding-block-start: 2em;
   border: none;
-  color: white;
+  color: greenyellow;
   background-color: transparent;
   outline: none;
   width: 100%;
@@ -839,7 +849,7 @@ form textarea {
   padding-block-start: 2em;
   font-family: "NeutralFace", sans-serif;
   font-size: 1.3em;
-  color: white;
+  color: greenyellow;
   border: none;
   outline: none;
   background-color: transparent;
@@ -856,7 +866,6 @@ form textarea {
   border-bottom: none;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
   font-size: 0.9rem;
   width: 100%;
   padding: 1rem;
@@ -873,10 +882,10 @@ form textarea {
   }
 }
 .button:hover {
-  background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
+  background: greenyellow;
   color: black;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 ::-webkit-scrollbar {
@@ -888,7 +897,7 @@ form textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to top, #BF953F, #FCF6BA, #B38728);
+  background: white;
 }
 
 .mobile-nav-toggle {
@@ -897,11 +906,11 @@ form textarea {
 
 footer {
   width: 100%;
-  height: 7rem;
+  height: 100%;
+  background-color: greenyellow;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: -webkit-linear-gradient(45deg, #BF953F, #FCF6BA);
 }
 
 .footer {
@@ -913,6 +922,7 @@ footer {
 }
 .footer p {
   font-family: "NeutralFace", sans-serif;
+  text-align: center;
 }
 .footer .icon-container {
   padding-bottom: 0;

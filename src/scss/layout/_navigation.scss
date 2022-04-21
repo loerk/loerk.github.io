@@ -8,33 +8,21 @@
   align-items: center;
   justify-content: space-between;
   .logo {
-    width: 3.2rem;
-    aspect-ratio: 1;
-    margin: 2rem;
-    // background: -webkit-linear-gradient(45deg, #bf953f, #fcf6ba);
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
-    color: a.$clr-light;
+    width: 3rem;
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    .upside-down {
+      color: greenyellow;
+      position: absolute;
+      transform: rotate(180deg);
+    }
     @include a.center-content;
     &::after {
       content: "";
       width: 40px;
       height: 40px;
       position: absolute;
-      border: 1px solid;
-      border-image-slice: 1;
-      border-width: 2px;
-      border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
-    }
-    
-    p {
-
-      font-family: a.$ff-head;
-      padding: 0.5rem;
-      border-left: 2px solid black;
-      border-right: 2px solid black;
     }
   }
 
@@ -58,7 +46,7 @@
       width: 2rem;
       height: 2px;
       margin: 5px 0;
-      background: -webkit-linear-gradient(#bf953f, #fcf6ba);
+      background: greenyellow;
     }
     .line2 {
       opacity: 0;
@@ -90,8 +78,8 @@
     border: 1px solid transparent;
 
     &:hover {
-      border-top: 1px solid a.$clr-light;
-      border-bottom: 1px solid a.$clr-light;
+      border-top: 1px solid greenyellow;
+      border-bottom: 1px solid greenyellow;
     }
   }
   a {
@@ -99,11 +87,6 @@
     font-family: a.$ff-head;
     font-weight: 700;
     letter-spacing: 0.2rem;
-    span {
-      background: -webkit-linear-gradient(#bf953f, #fcf6ba);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   }
   a > [aria-hidden="true"] {
     font-family: a.$ff-head, sans-serif;
@@ -125,7 +108,6 @@
     transform: translateX(100%);
   }
   @include a.min-sm {
-    //only top and bottom
     padding-block: 0.5rem;
     //smallest 3rem middle growth factor and last max padding
     padding-inline: clamp(3rem, 10vw, 10rem);

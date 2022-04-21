@@ -4,19 +4,20 @@
   .sub-header {
     width: 100%;
     border: none;
-    margin-top: 4rem;
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+  h2 {
+    text-align: center;
   }
   .flex-container {
     max-width: 300px;
     border-left: 5px solid;
     border-right: 5px solid;
-    border-top:none;
-    border-bottom:none;
+    border-top: none;
+    border-bottom: none;
     border-image-slice: 1;
     border-width: 1px;
-    border-image-source: -webkit-linear-gradient(top, #bf953f, #fcf6ba);
     padding-block: 3rem;
   }
 
@@ -29,18 +30,27 @@
     border-right: 5px solid;
     border-image-slice: 1;
     border-width: 1px;
-    border-image-source: -webkit-linear-gradient(top, #bf953f, #fcf6ba);
     transition: 1s ease;
     filter: grayscale(0);
 
     p {
+      text-align: left;
+      background-color: rgb(172, 255, 47);
       position: sticky;
       top: 55%;
       z-index: -1;
       padding: 1rem;
-  
+      color: black;
     }
-
+    #bootstrap {
+      width: 80%;
+    }
+    #react {
+      width: 90%;
+    }
+    #scss {
+      width: 80%;
+    }
     margin-block: 1rem;
   }
 }

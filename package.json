@@ -1,5 +1,6 @@
 {
   "name": "loerk.github.io",
+  "homepage": "franziskaseitz.com",
   "version": "1.0.0",
   "description": "This is the final Project of the User Interface Basics Course. You are about to look at the result of 3 months of HTML5, CSS3 and SCSS!",
   "main": "index.js",
@@ -17,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/loerk/loerk.github.io/issues"
   },
-  "homepage": "https://github.com/loerk/loerk.github.io#readme",
   "dependencies": {
     "sass": "^1.45.0"
   }

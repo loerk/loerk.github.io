@@ -19,49 +19,44 @@ $spaces: (1, 2, 3, 4, 5);
     padding: #{$space}rem 0;
   }
 }
- 
-.flex{
-    display:flex;
-    gap:1rem;
+
+.flex {
+  display: flex;
+  gap: 1rem;
 }
 
-.fa-w{
-color:white;
+.fa-w {
+  color: greenyellow;
 }
 
-.fa-b{
-  color:black;
-}
-.fa-g{
-
-  background: -webkit-linear-gradient( #BF953F, #FCF6BA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-}
-.text-center{
-  text-align:center;
+.fa-b {
+  color: black;
 }
 
-.ff-main{
+.text-center {
+  text-align: center;
+}
+
+.ff-main {
   font-family: a.$ff-head;
 }
 
-.bold{
-  font-weight:600;
+.bold {
+  font-weight: 600;
 }
 
-.center{
-  width:50%;
-  margin:0 auto;
-  display:flex;
+.center {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
 }
 
-.txt-g{
-  background: -webkit-linear-gradient( #BF953F, #FCF6BA, #FBF5B7, #AA771C);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+.txt-right {
+  text-align: right;
 }
-.txt-right{
-  text-align:right;
+
+p {
+  line-height: 2.4rem;
+  text-align: start;
 }

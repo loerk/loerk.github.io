@@ -1,31 +1,29 @@
 @use "../abstracts/" as a;
 
-form{
-    width: 60%;
-    margin: 0 auto;
-    padding-block: 10em;
-    input{
-        font-family: a.$ff-head;
-        font-size: 1.3em;
-        margin-top:1.5em;
-        padding-block-start:2em;
-        border: none;
-        color: white;
-        background-color: transparent;
-        outline:none;
-        width:100%;
-    
-    }
-    textarea{
-        width:100%;
-        margin-top:1.5em;
-        padding-block-start:2em;
-        font-family: a.$ff-head;
-        font-size: 1.3em;
-        color: white;
-        border:none;
-        outline:none;
-        background-color: transparent;
-    }
-
+form {
+  width: 40%;
+  margin: 0 auto;
+  padding-block: 10em;
+  input {
+    font-family: a.$ff-head;
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    padding-block-start: 2em;
+    border: none;
+    color: greenyellow;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    margin-top: 1.5em;
+    padding-block-start: 2em;
+    font-family: a.$ff-head;
+    font-size: 1.3em;
+    color: greenyellow;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
 }

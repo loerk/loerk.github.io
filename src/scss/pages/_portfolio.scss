@@ -1,13 +1,13 @@
 @use "../abstracts/" as a;
 
 .portfolio {
-  padding-bottom:5rem;
+  padding-bottom: 5rem;
   .link-container {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
-    border: 1px solid a.$clr-main;
+    border: 1px solid greenyellow;
     transition: 2s;
     grid-area: "image";
     @include a.min-md {
@@ -40,7 +40,7 @@
 }
 
 .img-portfolio {
-  background: -webkit-linear-gradient(#bf943f88, #fcf6ba83, #aa761c86);
+  background: rgba(172, 255, 47, 0.637);
   .fas {
     color: black;
   }
@@ -139,28 +139,25 @@ a {
   position: relative;
   transform: rotate(-45deg);
   padding: 2rem;
-  top:2rem;
+  top: 2rem;
   width: 20px;
-  opacity:0;
+  opacity: 0;
   aspect-ratio: 1;
   border-left: 10px solid;
   border-bottom: 10px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: -webkit-linear-gradient(#bf953f, #fcf6ba);
   margin: 0 auto;
   animation: updown 2s ease-in-out infinite 2s;
-
 }
 
 @keyframes updown {
   0% {
-    top:0;
+    top: 0;
   }
 
   80% {
-    opacity:1;
-    top:4;
+    opacity: 1;
+    top: 4;
   }
-
 }

@@ -6,8 +6,24 @@ header {
   background-color: a.$clr-dark;
   color: a.$clr-light;
 }
+.circle {
+  @include a.circle;
+}
+.arrow-up {
+  position: relative;
+  transform: rotate(135deg);
+  color: greenyellow;
+  width: 10px;
+  top: 18px;
+  aspect-ratio: 1;
+  border-left: 10px solid;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  margin: 0 auto;
+}
 .h1-container {
-  position:relative;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,7 +34,6 @@ header {
     @include a.min-sm {
       display: flex;
     }
- 
   }
   .h1-horizontal {
     position: absolute;
@@ -33,9 +48,6 @@ header {
       writing-mode: vertical-rl;
       text-orientation: upright;
       animation: tb-max 4s forwards;
-      background: -webkit-linear-gradient( #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
     .last-name > span::before {
       content: "tack";
@@ -44,9 +56,6 @@ header {
       writing-mode: vertical-rl;
       text-orientation: upright;
       animation: tb-max 4s forwards;
-      background: -webkit-linear-gradient( #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
 
     @include a.max-sm {
@@ -65,10 +74,6 @@ header {
         writing-mode: vertical-rl;
         text-orientation: upright;
         animation: tb-min 4s forwards;
-        background: -webkit-linear-gradient( #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
       }
       .last-name > span::before {
         content: "tack";
@@ -78,9 +83,6 @@ header {
         writing-mode: vertical-rl;
         text-orientation: upright;
         animation: tb-min 4s forwards;
-        background: -webkit-linear-gradient( #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
       }
     }
     span {
@@ -89,16 +91,16 @@ header {
     }
   }
   .sub-header {
-    position:relative;
+    position: relative;
     top: 300px;
     letter-spacing: clamp(1rem, 5vw, 1.5rem);
     font-size: 0rem;
     font-weight: 600;
-    color:white;
+    color: white;
     animation: rise 4s ease-in-out 1s forwards;
     @include a.min-md {
       top: 200px;
-      left:-100px;
+      left: -100px;
     }
   }
 }
@@ -108,7 +110,6 @@ header {
   }
   to {
     font-size: 2rem;
-   
   }
 }
 
