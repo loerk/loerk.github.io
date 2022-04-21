@@ -8,18 +8,19 @@ header {
 }
 .circle {
   @include a.circle;
+  background-color: black;
 }
 .arrow-up {
   position: relative;
   transform: rotate(135deg);
   color: greenyellow;
   width: 10px;
-  top: 18px;
+  top: 20px;
   aspect-ratio: 1;
   border-left: 10px solid;
   border-bottom: 10px solid;
   border-image-slice: 1;
-  border-width: 2px;
+  border-width: 1px;
   margin: 0 auto;
 }
 .h1-container {
