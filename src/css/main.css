@@ -829,7 +829,7 @@ a:hover:not(.button) {
   }
 }
 form {
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   padding-block: 10em;
 }
