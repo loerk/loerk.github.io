@@ -55,7 +55,11 @@
 .about {
   .text-container {
     padding-top: 6rem;
-    width: 50%;
+    width: 65%;
     margin: 0 auto;
+
+    @include a.min-sm {
+      max-width: 50%;
+    }
   }
 }
