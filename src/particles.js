@@ -33,7 +33,7 @@ tsParticles.load("tsparticles", {
             enable: true,
             distance: 100,
             color: "#adff2f",
-            opacity: 0.8,
+            opacity: 0.4,
             width: 1
         },
         move: {
@@ -57,14 +57,14 @@ tsParticles.load("tsparticles", {
             grab: {
                 distance: 400,
                 links: {
-                    opacity: 1
+                    opacity: 0.2
                 }
             },
             bubble: {
                 distance: 400,
                 size: 40,
                 duration: 2,
-                opacity: 0.8
+                opacity: 0.2
             },
             repulse: {
                 distance: 200
