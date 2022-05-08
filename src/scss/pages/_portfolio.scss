@@ -57,8 +57,15 @@
 .link-container3 {
   background: center/cover no-repeat url("../images/portfolio.png");
 }
-
+.link-container4 {
+  background: center/cover no-repeat url("../images/todo.png");
+}
+.link-container5 {
+  background: center/cover no-repeat url("../images/starterkit.png");
+}
 .work-container {
+  position: relative;
+  z-index: 900;
   width: 80%;
   max-width: 1400px;
   margin: 0 auto;
@@ -136,6 +143,7 @@ a {
 }
 
 .moving-arrow {
+  color: greenyellow;
   position: relative;
   transform: rotate(-45deg);
   padding: 2rem;

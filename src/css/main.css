@@ -167,7 +167,7 @@ header {
 .arrow-up {
   position: relative;
   transform: rotate(135deg);
-  color: greenyellow;
+  color: #adff2f;
   width: 10px;
   top: 20px;
   aspect-ratio: 1;
@@ -731,7 +731,17 @@ section .flex-container {
   background: center/cover no-repeat url("../images/portfolio.png");
 }
 
+.link-container4 {
+  background: center/cover no-repeat url("../images/todo.png");
+}
+
+.link-container5 {
+  background: center/cover no-repeat url("../images/starterkit.png");
+}
+
 .work-container {
+  position: relative;
+  z-index: 900;
   width: 80%;
   max-width: 1400px;
   margin: 0 auto;
@@ -817,6 +827,7 @@ a:hover:not(.button) {
 }
 
 .moving-arrow {
+  color: greenyellow;
   position: relative;
   transform: rotate(-45deg);
   padding: 2rem;
@@ -947,6 +958,7 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 1;
+  position: fixed;
 }
 
 /*# sourceMappingURL=main.css.map */
