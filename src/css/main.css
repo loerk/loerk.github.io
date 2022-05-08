@@ -741,7 +741,7 @@ section .flex-container {
 
 .work-container {
   position: relative;
-  z-index: 900;
+  z-index: 50;
   width: 80%;
   max-width: 1400px;
   margin: 0 auto;
