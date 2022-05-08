@@ -4,6 +4,8 @@
   width: 80%;
 }
 .img-container {
+  position: relative;
+  z-index: 100;
   margin: 0 auto;
   width: 200px;
   aspect-ratio: 1;
