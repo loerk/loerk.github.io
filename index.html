@@ -19,11 +19,16 @@ you are awesome!
     />
     <link rel="shortcut icon" href="src/images/logo.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/3c09bcb51a.js"></script>
-    <script src="nav.js" defer></script>
+    <script type="module" src="./src/js/nav.js" defer></script> 
+    
     <title>Hi!re me</title>
   </head>
   <body>
+    <div id="tsparticles"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"> </script>
+    <script type = "module" src="./src/particles.js"></script>
     <header id="home">
+      
       <div class="nav-container flex">
         <div class="logo">
           <p>F<span class="upside-down">F</span></p>
@@ -61,18 +66,15 @@ you are awesome!
         </nav>
       </div>
       <div class="h1-container">
-        <div class="h1-horizontal">
-         
+        <div class="h1-horizontal">  
           <div class="first-name">f<span>ranziska</span></div>
           <div class="last-name">s<span>eitz</span></div>
-        </div>
-        
+        </div>  
         <a href="#home" class="circle">
           <div class="arrow-up"></div>
         </a>
         <div class="h1-horizontal sub-header"><p>webdev</p></div>
     </header>
-   
     <main>
       <section id="about" class="about">
       

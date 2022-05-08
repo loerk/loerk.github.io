@@ -13,7 +13,7 @@ header {
 .arrow-up {
   position: relative;
   transform: rotate(135deg);
-  color: greenyellow;
+  color: #adff2f;
   width: 10px;
   top: 20px;
   aspect-ratio: 1;
@@ -130,4 +130,11 @@ header {
   to {
     top: 150px;
   }
+}
+#tsparticles {
+  width: 100vw;
+  aspect-ratio: 1;
+  position: fixed;
+  z-index: -1;
+  color: red;
 }

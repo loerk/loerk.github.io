@@ -19,6 +19,8 @@
     "url": "https://github.com/loerk/loerk.github.io/issues"
   },
   "dependencies": {
-    "sass": "^1.45.0"
+    "sass": "^1.45.0",
+    "tsparticles": "^2.0.6",
+    "tsparticles-engine": "^2.0.6"
   }
 }
