@@ -78,4 +78,22 @@ tsParticles.load("tsparticles", {
         }
     },
     detectRetina: true,
+    responsive: [{
+        maxWidth: 300,
+        options: {
+            particles: {
+                number: {
+                    value: 50
+                },
+                links: {
+                    enable: true,
+                    distance: 100,
+                    color: "#adff2f",
+                    opacity: 0.2,
+                    width: 1
+                },
+            }
+        }
+    }]
+
 });
