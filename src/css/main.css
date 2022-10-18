@@ -670,6 +670,12 @@ section .flex-container {
 .stack .img-container #scss {
   width: 80%;
 }
+.stack .img-container #node {
+  width: 60%;
+}
+.stack .img-container #react-native {
+  width: 80%;
+}
 
 .portfolio {
   padding-bottom: 5rem;
@@ -744,6 +750,14 @@ section .flex-container {
 
 .link-container5 {
   background: center/cover no-repeat url("../images/starterkit.png");
+}
+
+.link-container6 {
+  background: center/cover no-repeat url("../images/recome.png");
+}
+
+.link-container7 {
+  background: center/contain no-repeat url("../images/kc1.jpg");
 }
 
 .work-container {

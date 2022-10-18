@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 .stack {
   .sub-header {
@@ -49,6 +49,12 @@
       width: 90%;
     }
     #scss {
+      width: 80%;
+    }
+    #node {
+      width: 60%;
+    }
+    #react-native {
       width: 80%;
     }
     margin-block: 1rem;
