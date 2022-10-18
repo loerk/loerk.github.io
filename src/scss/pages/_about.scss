@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 .flex-container {
   width: 80%;
@@ -8,6 +8,9 @@
   z-index: 100;
   margin: 0 auto;
   width: 200px;
+  box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
   aspect-ratio: 1;
   span {
     font-size: 0.5rem;
@@ -34,7 +37,7 @@
       }
     }
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -43,7 +46,7 @@
   }
   .circle {
     position: fixed;
-    border: 1px solid greenyellow;
+    border: 1px solid #cf7fd1;
     z-index: 1;
     width: 100px;
     height: 100px;

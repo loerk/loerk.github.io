@@ -3,11 +3,12 @@
 .portfolio {
   padding-bottom: 5rem;
   .link-container {
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
-    border: 1px solid greenyellow;
+    border: 1px solid #cf7fd1;
     transition: 2s;
     grid-area: 'image';
     @include a.min-md {
@@ -40,7 +41,7 @@
 }
 
 .img-portfolio {
-  background: rgba(172, 255, 47, 0.637);
+  background: rgb(207, 127, 209, 0.637);
   .fas {
     color: black;
   }
@@ -81,7 +82,11 @@
   transition: 1s;
   @include a.min-md {
     margin-top: 4rem;
+    padding: 2rem;
     display: grid;
+    box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
     grid-template-columns: 200px 400px minmax(200px, 800px);
     grid-template-areas: 'header image text';
     gap: 2rem;
@@ -92,7 +97,7 @@
     }
     &:hover .img-portfolio {
       width: 400px;
-      height: 200px;
+      height: 300px;
     }
     &:hover {
       filter: grayscale(0);
@@ -108,7 +113,7 @@
     grid-area: 'header';
     @include a.min-md {
       width: 1px;
-      height: 200px;
+      height: 300px;
     }
 
     @include a.max-md {
@@ -149,7 +154,7 @@ a {
 }
 
 .moving-arrow {
-  color: greenyellow;
+  color: #cf7fd1;
   position: relative;
   transform: rotate(-45deg);
   padding: 2rem;

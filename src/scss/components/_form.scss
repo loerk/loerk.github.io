@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 form {
   width: 50%;
@@ -10,7 +10,7 @@ form {
     margin-top: 1.5em;
     padding-block-start: 2em;
     border: none;
-    color: greenyellow;
+    color: #cf7fd1;
     background-color: transparent;
     outline: none;
     width: 100%;
@@ -22,7 +22,7 @@ form {
     padding-block-start: 2em;
     font-family: a.$ff-head;
     font-size: 1.3em;
-    color: greenyellow;
+    color: #cf7fd1;
     border: none;
     outline: none;
     background-color: transparent;

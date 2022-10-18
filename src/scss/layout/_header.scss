@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 header {
   width: 100%;
@@ -8,13 +8,13 @@ header {
 }
 .circle {
   @include a.circle;
-  background-color: black;
+  background-color: #403e3e;
 }
 .arrow-up {
   position: relative;
   transform: rotate(135deg);
-  color: #adff2f;
-  width: 10px;
+  color: #cf7fd1;
+  width: 20px;
   top: 20px;
   aspect-ratio: 1;
   border-left: 10px solid;
@@ -43,7 +43,7 @@ header {
     letter-spacing: 0.5rem;
     font-size: 3em;
     .first-name > span::before {
-      content: "ull";
+      content: 'ull';
       position: absolute;
       left: -5px;
       writing-mode: vertical-rl;
@@ -51,7 +51,7 @@ header {
       animation: tb-max 4s forwards;
     }
     .last-name > span::before {
-      content: "tack";
+      content: 'tack';
       position: absolute;
       right: 100px;
       writing-mode: vertical-rl;
@@ -68,7 +68,7 @@ header {
         position: relative;
       }
       .first-name > span::before {
-        content: "ull";
+        content: 'ull';
         position: absolute;
         top: 110px;
         left: -5px;
@@ -77,7 +77,7 @@ header {
         animation: tb-min 4s forwards;
       }
       .last-name > span::before {
-        content: "tack";
+        content: 'tack';
         position: absolute;
         top: 110px;
         left: 1px;

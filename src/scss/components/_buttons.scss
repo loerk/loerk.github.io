@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 .button {
   display: block;
@@ -25,7 +25,7 @@
   }
 
   &:hover {
-    background: greenyellow;
+    background: #cf7fd1;
     color: a.$clr-dark;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -36,10 +36,10 @@
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0);
+  background: #403e3e;
 }
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: #cf7fd1;
 }
 .mobile-nav-toggle {
   cursor: pointer;

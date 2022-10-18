@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 $spaces: (1, 2, 3, 4, 5);
 
@@ -26,11 +26,11 @@ $spaces: (1, 2, 3, 4, 5);
 }
 
 .fa-w {
-  color: greenyellow;
+  color: #cf7fd1;
 }
 
 .fa-b {
-  color: black;
+  color: #403e3e;
 }
 
 .text-center {

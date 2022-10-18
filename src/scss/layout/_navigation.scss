@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 .nav-container {
   position: fixed;
@@ -13,13 +13,13 @@
     margin-top: 2.5rem;
     font-size: 1.8rem;
     .upside-down {
-      color: greenyellow;
+      color: #cf7fd1;
       position: absolute;
       transform: rotate(180deg);
     }
     @include a.center-content;
     &::after {
-      content: "";
+      content: '';
       width: 40px;
       height: 40px;
       position: absolute;
@@ -46,13 +46,13 @@
       width: 2rem;
       height: 2px;
       margin: 5px 0;
-      background: greenyellow;
+      background: #cf7fd1;
     }
     .line2 {
       opacity: 0;
     }
   }
-  .mobile-nav-toggle[aria-expanded="true"] {
+  .mobile-nav-toggle[aria-expanded='true'] {
     .line1 {
       transform: rotate(-45deg);
     }
@@ -61,7 +61,7 @@
     }
     .line3 {
       transform: rotate(45deg);
-      margin-left: 0px;
+      margin-left: 1px;
     }
   }
 }
@@ -78,8 +78,8 @@
     border: 1px solid transparent;
 
     &:hover {
-      border-top: 1px solid greenyellow;
-      border-bottom: 1px solid greenyellow;
+      border-top: 1px solid #cf7fd1;
+      border-bottom: 1px solid #cf7fd1;
     }
   }
   a {
@@ -88,7 +88,7 @@
     font-weight: 700;
     letter-spacing: 0.2rem;
   }
-  a > [aria-hidden="true"] {
+  a > [aria-hidden='true'] {
     font-family: a.$ff-head, sans-serif;
     margin-inline-end: 0.75em;
 
@@ -114,7 +114,7 @@
     gap: clamp(1.5rem, 5vw, 3rem);
   }
 }
-.primary-navigation[data-visible="true"] {
+.primary-navigation[data-visible='true'] {
   transform: translateX(0%);
 }
 //if a browser supports this property execute that code, if not, take default

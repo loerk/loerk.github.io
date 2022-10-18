@@ -1,17 +1,13 @@
 @forward '../base/typography';
 
 $clr-light: white;
-$clr-dark:black;
+$clr-dark: #403e3e;
 
 $ff-head: 'NeutralFace', sans-serif;
 
-
-
-$clr-main:rgb(204,160,29);
-$clr-main-light:rgba(204, 160, 29, 0.63);
-$clr-main-dark:rgb(61, 46, 2);
-
+$clr-main: rgb(204, 160, 29);
+$clr-main-light: rgba(204, 160, 29, 0.63);
+$clr-main-dark: rgb(61, 46, 2);
 
 // Neptune
 // #74ACB8
-

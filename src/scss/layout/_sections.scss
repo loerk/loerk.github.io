@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 html {
   scroll-behavior: smooth;
@@ -8,7 +8,7 @@ body {
 }
 section {
   position: relative;
-  background-color: black;
+  background-color: #403e3e;
   color: white;
   width: 100%;
   min-height: 100vh;
