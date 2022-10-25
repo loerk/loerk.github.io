@@ -375,7 +375,7 @@ header {
 
 .primary-navigation {
   backdrop-filter: blur(1rem);
-  background: rgba(0, 0, 0, 0.8);
+  background: hsla(0deg, 0%, 0%, 0.8);
 }
 .primary-navigation li {
   cursor: pointer;
@@ -430,7 +430,7 @@ header {
 @supports (backdrop-filter: blur(1rem)) {
   .primary-navigation {
     backdrop-filter: blur(1rem);
-    background: rgba(255, 255, 255, 0.1);
+    background: hsla(0deg, 0%, 100%, 0.1);
   }
 }
 html {
@@ -765,6 +765,10 @@ section .flex-container {
 
 .link-container7 {
   background: center/contain no-repeat url("../images/kc1.jpg");
+}
+
+.link-containerQuiz {
+  background: center/contain no-repeat url("../images/quiz.png");
 }
 
 .work-container {
