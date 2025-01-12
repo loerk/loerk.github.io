@@ -1,12 +1,15 @@
 @font-face {
-    font-family: 'NeutralFace';
-    src: url(../fonts/NeutralFace.otf) format('opentype');
-  }
+  font-family: 'NeutralFace';
+  src: url(../fonts/NeutralFace.otf) format('opentype');
+}
 @font-face {
   font-family: 'NeutralFaceBold';
   src: url(../fonts/NeutralFace-Bold.otf) format('opentype');
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
   font-family: 'NeutralFace';
 }

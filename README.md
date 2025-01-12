@@ -1,6 +1,23 @@
-# Welcome to my portfolio-page
+## Installation
 
-This is the final Project of the User Interface Basics Course. You are about to look at the result of 3 months of HTML5, CSS3 and SCSS!
+To install the project dependencies, run:
 
-### Please enjoy the full page [here](https://loerk.github.io/) 
+```sh
+npm install
+```
 
+## Build
+
+To build the project, run:
+
+```sh
+npm build
+```
+
+To run the Project, run:
+
+```sh
+npm start
+```
+
+### Please enjoy the full page [here](https://loerk.github.io/)
