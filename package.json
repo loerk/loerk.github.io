@@ -2,25 +2,37 @@
   "name": "loerk.github.io",
   "homepage": "franziskaseitz.com",
   "version": "1.0.0",
+  "type": "module",
   "description": "This is the final Project of the User Interface Basics Course. You are about to look at the result of 3 months of HTML5, CSS3 and SCSS!",
   "main": "index.js",
   "scripts": {
     "start": "sass --watch src/scss:src/css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/loerk/loerk.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Franziska Seitz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/loerk/loerk.github.io/issues"
   },
   "dependencies": {
-    "sass": "^1.45.0",
-    "tsparticles": "^2.0.6",
+    "tsparticles": "^2.12.0",
     "tsparticles-engine": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.1",
+    "typescript": "^5.7.3"
   }
 }
