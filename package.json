@@ -7,12 +7,11 @@
   "main": "index.js",
   "scripts": {
     "start": "sass --watch src/scss:src/css",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "build": "tsc"
+    "build": "sass src/scss:src/css && tsc"
   },
   "repository": {
     "type": "git",
