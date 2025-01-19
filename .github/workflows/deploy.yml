@@ -24,7 +24,15 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Check for required folders
+        run: |
+          if [ ! -d "./dist" ] || [ ! -d "./src/css" ]; then
+            echo "Required folders (dist or src/css) are missing."
+            exit 1
+          fi
+
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
