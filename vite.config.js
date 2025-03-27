@@ -11,6 +11,7 @@ export default defineConfig({
   build: {
     outDir: '../dist',
     emptyOutDir: true,
+    assetsInlineLimit: 0,
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       external: ['htmx.org'], // Exclude HTMX from bundling
