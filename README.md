@@ -20,4 +20,4 @@ To run the Project, run:
 npm start
 ```
 
-### Please enjoy the full page [here](https://loerk.github.io/)
+### Please enjoy the page [here](https://loerk.github.io/)
