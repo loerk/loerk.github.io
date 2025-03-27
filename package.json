@@ -14,7 +14,7 @@
     "build": "npm run clean && npm run build:ts && npm run build:scss && npm run copy:assets",
     "build:ts": "tsc",
     "build:scss": "sass src/scss:dist/css",
-    "copy:assets": "cp -r src/images src/fonts *.html dist/",
+    "copy:assets": "cp -r src/images src/fonts *.html src/particles.js dist/",
     "clean": "rm -rf dist/*"
   },
   "repository": {
