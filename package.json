@@ -6,15 +6,18 @@
   "description": "This is the final Project of the User Interface Basics Course. You are about to look at the result of 3 months of HTML5, CSS3 and SCSS!",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch src/scss:src/css",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "start": "concurrently \"npm run dev:watch\" \"vite src --open\"",
+    "dev": "npm run clean && npm run build:scss:dev",
+    "dev:watch": "sass --watch src/scss:src/css",
     "build": "npm run clean && npm run build:ts && npm run build:scss && npm run copy:assets",
     "build:ts": "tsc",
     "build:scss": "sass src/scss:dist/css",
-    "copy:assets": "cp -r src/images src/fonts *.html src/particles.js dist/",
+    "build:scss:dev": "sass src/scss:src/css",
+    "copy:assets": "cp -r src/images src/fonts src/*.html src/particles.js dist/",
     "clean": "rm -rf dist/*"
   },
   "repository": {
@@ -33,9 +36,11 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.5",
+    "concurrently": "^9.1.2",
     "eslint": "^9.18.0",
     "prettier": "^3.4.2",
     "sass": "^1.83.1",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vite": "^6.2.3"
   }
 }
