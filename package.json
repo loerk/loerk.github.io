@@ -11,7 +11,11 @@
     "format:check": "prettier --check .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "build": "sass src/scss:dist/css && tsc"
+    "build": "npm run clean && npm run build:ts && npm run build:scss && npm run copy:assets",
+    "build:ts": "tsc",
+    "build:scss": "sass src/scss:dist/css",
+    "copy:assets": "cp -r src/images src/fonts *.html dist/",
+    "clean": "rm -rf dist/*"
   },
   "repository": {
     "type": "git",
