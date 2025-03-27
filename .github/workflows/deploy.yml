@@ -9,7 +9,7 @@ on:
 permissions:
   pages: write
   id-token: write
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -30,21 +30,14 @@ jobs:
         run: npm install
 
       - name: Build TypeScript and SCSS
-        run: |
-          npm run build
-          ls -la dist/
+        run: npm run build
 
-      - name: Upload build output
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: ./dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
 
     steps:
       - name: Deploy to GitHub Pages
