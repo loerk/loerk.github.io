@@ -9,6 +9,7 @@ on:
 permissions:
   pages: write
   id-token: write
+  contents: read
 
 jobs:
   build:
@@ -29,7 +30,9 @@ jobs:
         run: npm install
 
       - name: Build TypeScript and SCSS
-        run: npm run build
+        run: |
+          npm run build
+          ls -la dist/
 
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
@@ -41,7 +44,9 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
