@@ -1,5 +1,5 @@
 <div class="footer text-center">
-  <p>&copy; FS 2025</p>
+  <p>&copy; <span id="current-year"></span></p>
   <div class="z-index-up icon-container">
     <a
       href="https://codepen.io/Fraser_Fou"
@@ -27,3 +27,8 @@
     ></a>
   </div>
 </div>
+
+<script>
+  document.getElementById('current-year').textContent =
+    new Date().getFullYear();
+</script>
