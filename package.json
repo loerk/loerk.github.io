@@ -11,7 +11,7 @@
     "format:check": "prettier --check .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "build": "sass src/scss:src/css && tsc"
+    "build": "sass src/scss:dist/css && tsc"
   },
   "repository": {
     "type": "git",

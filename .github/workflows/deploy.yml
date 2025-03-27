@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   pages: write
@@ -14,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -31,11 +31,6 @@ jobs:
       - name: Build TypeScript and SCSS
         run: npm run build
 
-      - name: Copy CSS to Dist
-        run: |
-          mkdir -p dist/css
-          cp -r src/css/* dist/css/
-
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
@@ -46,7 +41,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
