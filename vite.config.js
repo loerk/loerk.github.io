@@ -7,9 +7,11 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   root: 'src',
+  base: './',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       external: ['htmx.org'], // Exclude HTMX from bundling
       input: {
