@@ -32,8 +32,12 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: List build output
-        run: ls -la dist/
+      - name: List build output structure
+        run: |
+          echo "Dist folder contents:"
+          ls -la dist/
+          echo "\nAssets folder contents:"
+          ls -la dist/assets/
 
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
