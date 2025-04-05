@@ -32,22 +32,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Verify build
-        run: |
-          echo "Checking build output structure:"
-          tree dist/
-
-          echo "\nChecking assets folder contents:"
-          ls -R dist/assets/
-
-          echo "\nChecking specific file types:"
-          echo "CSS files:"
-          ls dist/assets/*.css 2>/dev/null || echo "No CSS files found"
-          echo "\nJS files:"
-          ls dist/assets/*.js 2>/dev/null || echo "No JS files found"
-          echo "\nImage files:"
-          ls dist/assets/images/*.{png,jpg,jpeg} 2>/dev/null || echo "No image files found"
-
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
