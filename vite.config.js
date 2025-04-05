@@ -29,6 +29,9 @@ export default defineConfig({
       },
     },
   },
+  css: {
+    devSourcemap: true,
+  },
   optimizeDeps: {
     exclude: ['htmx.org'], // Exclude HTMX from dependency optimization
   },
