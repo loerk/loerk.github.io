@@ -31,6 +31,11 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "src/scss/main.scss";',
+      },
+    },
   },
   optimizeDeps: {
     exclude: ['htmx.org'], // Exclude HTMX from dependency optimization
