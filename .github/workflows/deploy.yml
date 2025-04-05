@@ -34,16 +34,19 @@ jobs:
 
       - name: Verify build
         run: |
-          echo "Checking build output..."
-          ls -la dist/
-          echo "\nAssets directory content:"
-          ls -la dist/assets/
-          echo "\nCSS files:"
-          find dist/assets -name "*.css" -type f
+          echo "Checking build output structure:"
+          tree dist/
+
+          echo "\nChecking assets folder contents:"
+          ls -R dist/assets/
+
+          echo "\nChecking specific file types:"
+          echo "CSS files:"
+          ls dist/assets/*.css 2>/dev/null || echo "No CSS files found"
           echo "\nJS files:"
-          find dist/assets -name "*.js" -type f
+          ls dist/assets/*.js 2>/dev/null || echo "No JS files found"
           echo "\nImage files:"
-          find dist/assets -name "*.png" -name "*.jpg" -type f
+          ls dist/assets/images/*.{png,jpg,jpeg} 2>/dev/null || echo "No image files found"
 
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
