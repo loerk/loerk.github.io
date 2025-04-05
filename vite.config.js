@@ -18,7 +18,7 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, 'src/index.html'),
         main: resolve(__dirname, 'src/main.html'),
-        home: resolve(__dirname, 'src/home.html'),
+        home: resolve(__dirname, 'src/animation.html'),
         footer: resolve(__dirname, 'src/footer.html'),
       },
     },

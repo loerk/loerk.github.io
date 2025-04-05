@@ -1,3 +1,5 @@
+import { tsParticles } from 'tsparticles-engine';
+
 tsParticles.load('tsparticles', {
   particles: {
     number: {
