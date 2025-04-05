@@ -15,6 +15,18 @@ export default defineConfig({
         home: 'src/animation.html',
         footer: 'src/footer.html',
       },
+      output: {
+        assetFileNames: (assetInfo) => {
+          // Keep all assets in their respective directories
+          if (/\.(png|jpe?g)$/.test(assetInfo.name)) {
+            return 'assets/images/[name].[hash][extname]';
+          }
+          if (/\.(otf)$/.test(assetInfo.name)) {
+            return 'assets/fonts/[name].[hash][extname]';
+          }
+          return 'assets/[name].[hash][extname]';
+        },
+      },
     },
   },
   optimizeDeps: {
