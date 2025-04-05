@@ -32,6 +32,19 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify build
+        run: |
+          echo "Checking build output..."
+          ls -la dist/
+          echo "\nAssets directory content:"
+          ls -la dist/assets/
+          echo "\nCSS files:"
+          find dist/assets -name "*.css" -type f
+          echo "\nJS files:"
+          find dist/assets -name "*.js" -type f
+          echo "\nImage files:"
+          find dist/assets -name "*.png" -name "*.jpg" -type f
+
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
