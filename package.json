@@ -11,8 +11,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "start": "concurrently \"sass --watch src/scss:src/css\" \"vite src --open\"",
-    "sass": "sass src/scss:src/css",
-    "build": "npm run clean && npm run sass && vite build",
+    "build": "npm run clean && vite build",
     "clean": "rm -rf dist/*"
   },
   "repository": {
