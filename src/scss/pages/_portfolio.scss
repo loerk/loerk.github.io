@@ -26,53 +26,7 @@
     }
   }
 }
-.img-portfolio {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.2rem;
-  @include a.min-md {
-    width: 1px;
-    aspect-ratio: 1;
-    clip-path: circle(50% at 50% 50%);
-    transition: 2s;
-  }
-}
 
-.img-portfolio {
-  background: rgb(207, 127, 209, 0.637);
-  .fa {
-    color: black;
-  }
-}
-
-.link-container1 {
-  background: center/contain no-repeat url('../assets/images/journal.png');
-}
-
-.link-container2 {
-  background: center/contain no-repeat url('../assets/images/bbq.png');
-}
-
-.link-container3 {
-  background: center/contain no-repeat url('../assets/images/portfolio.png');
-}
-.link-container4 {
-  background: center/contain no-repeat url('../assets/images/todo.png');
-}
-.link-container5 {
-  background: center/contain no-repeat url('../assets/images/starterkit.png');
-}
-.link-container6 {
-  background: center/contain no-repeat url('../assets/images/recome.png');
-}
-.link-container7 {
-  background: center/contain no-repeat url('../assets/images/kc1.jpg');
-}
-.link-containerQuiz {
-  background: center/contain no-repeat url('../assets/images/quiz.png');
-}
 .work-container {
   position: relative;
   z-index: 50;
@@ -87,28 +41,9 @@
     margin-top: 4rem;
     padding: 2rem;
     display: grid;
-    box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
-    -webkit-box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
-    -moz-box-shadow: 25px 31px 91px 3px rgba(0, 0, 0, 0.56);
-    grid-template-columns: 200px 400px minmax(200px, 800px);
-    grid-template-areas: 'header image text';
+    grid-template-columns: 200px minmax(400px, 800px);
+    grid-template-areas: 'header text';
     gap: 2rem;
-    filter: grayscale(100%);
-
-    &:hover .link-container {
-      width: 400px;
-    }
-    &:hover .img-portfolio {
-      width: 400px;
-      height: 300px;
-    }
-    &:hover {
-      filter: grayscale(0);
-    }
-  }
-
-  img {
-    width: 100%;
   }
 
   .project-header {
