@@ -46,17 +46,17 @@ header {
       content: 'ull';
       position: absolute;
       left: -5px;
+      top: 150px;
       writing-mode: vertical-rl;
       text-orientation: upright;
-      animation: tb-max 4s forwards;
     }
     .last-name > span::before {
       content: 'tack';
       position: absolute;
       right: 100px;
+      top: 150px;
       writing-mode: vertical-rl;
       text-orientation: upright;
-      animation: tb-max 4s forwards;
     }
 
     @include a.max-sm {
@@ -74,7 +74,6 @@ header {
         left: -5px;
         writing-mode: vertical-rl;
         text-orientation: upright;
-        animation: tb-min 4s forwards;
       }
       .last-name > span::before {
         content: 'tack';
@@ -83,7 +82,6 @@ header {
         left: 1px;
         writing-mode: vertical-rl;
         text-orientation: upright;
-        animation: tb-min 4s forwards;
       }
     }
     span {
@@ -95,7 +93,7 @@ header {
     position: relative;
     top: 300px;
     letter-spacing: clamp(1rem, 5vw, 1.5rem);
-    font-size: 0rem;
+    font-size: 2rem;
     font-weight: 600;
     color: white;
     animation: rise 4s ease-in-out 1s forwards;
@@ -103,31 +101,5 @@ header {
       top: 200px;
       left: -100px;
     }
-  }
-}
-@keyframes rise {
-  from {
-    font-size: 0;
-  }
-  to {
-    font-size: 2rem;
-  }
-}
-
-@keyframes tb-min {
-  from {
-    top: -999px;
-  }
-  to {
-    top: 110px;
-  }
-}
-
-@keyframes tb-max {
-  from {
-    top: -999px;
-  }
-  to {
-    top: 150px;
   }
 }
