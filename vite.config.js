@@ -12,7 +12,7 @@ export default defineConfig({
       input: {
         main: 'src/main.html',
         index: 'src/index.html',
-        home: 'src/animation.html',
+        home: 'src/header.html',
         footer: 'src/footer.html',
       },
       output: {
