@@ -31,8 +31,6 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Verify build
         run: |
           echo "Checking build output structure:"
           tree dist/
